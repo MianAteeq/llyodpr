@@ -1,0 +1,4 @@
+[04-Jul-2022 13:11:21 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.30. in /home2/albaseer/llordpr.demo-fissionmonster.xyz/vendor/composer/platform_check.php on line 24
+[06-Oct-2022 09:03:26 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 20480 bytes) in /home2/albaseer/llordpr.demo-fissionmonster.xyz/vendor/dompdf/dompdf/src/Css/Style.php on line 2164
+[06-Oct-2022 09:03:39 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 20480 bytes) in /home2/albaseer/llordpr.demo-fissionmonster.xyz/vendor/dompdf/dompdf/src/Css/Style.php on line 1167
+[06-Oct-2022 09:04:40 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 131072 bytes) in /home2/albaseer/llordpr.demo-fissionmonster.xyz/vendor/dompdf/dompdf/lib/Cpdf.php on line 3499
