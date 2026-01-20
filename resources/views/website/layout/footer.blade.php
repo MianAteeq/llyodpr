@@ -684,7 +684,7 @@ $contact_foot = \App\Models\Contact::first();
                                                     <a href="https://registry.blockmarktech.com/certificates/d2769b18-6d71-4136-b32c-2c7d7a52cba2/?share_key=WXXNdrJa7JvXlq1fRcCwzSUstw06WZZVCGpHIOYfnPs"
                                                         target="_blank">
                                                         <img class="fl-photo-img wp-image-6623 size-full law-firm-logo"
-                                                            src="https://lloydspr.com/certificate.png"
+                                                            src="{{ asset('certificate.png') }}"
                                                             alt="UK Leading Firm 2025" itemprop="image"
                                                             style="">
                                                     </a>
