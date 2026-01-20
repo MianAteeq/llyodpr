@@ -1225,7 +1225,7 @@ $contact_foot = \App\Models\Contact::first();
 <script defer src="<?php echo asset('/website'); ?>/assets/cookies/cookieconsent.js"></script>
 <script defer src="<?php echo asset('/website'); ?>/assets/cookies/cookieconsent-init.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>-->
-<script src="{{ URL::to('public/assets/slick/slick.js') }}" type="text/javascript" charset="utf-8"></script>
+<script src="{{ URL::to('assets/slick/slick.js') }}" type="text/javascript" charset="utf-8"></script>
 
 <script>
     jQuery(".vertical-center-3").slick({

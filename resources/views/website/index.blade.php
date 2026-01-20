@@ -228,8 +228,8 @@
         }
     </style>
 
-    <link rel="stylesheet" type="text/css" href="{{ URL::to('public/assets/slick/slick.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ URL::to('public/assets/slick/slick-theme.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::to('assets/slick/slick.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::to('assets/slick/slick-theme.css') }}">
 </head>
 
 <body
@@ -563,7 +563,7 @@
                                                                 <script>
                                                                     var htmlDivCss = unescape(
                                                                         "%23rev_slider_2_2_wrapper%20.anwalt-navigation.tparrows%20%7B%0A%20%20width%3A%2040px%3B%0A%20%20height%3A%2040px%3B%0A%20%20line-height%3A%2040px%3B%0A%20%20background%3A%20transparent%3B%0A%20%7D%0A%20%23rev_slider_2_2_wrapper%20.anwalt-navigation.tparrows%3Abefore%20%7B%0A%20color%3A%20%23000%3B%0A%20font-size%3A36px%3B%0A%20font-family%3A%20%22Linearicons-Free%22%3B%0A%20transition%3Aall%200.3s%3B%0A-webkit-transition%3Aall%200.3s%3B%0A%20%7D%0A%20%0A%23rev_slider_2_2_wrapper%20.anwalt-navigation.tparrows%3Ahover%3Abefore%20%7B%0A%20%20color%3A%20%23aa9166%3B%0A%7D%0A%20%20%0A%23rev_slider_2_2_wrapper%20.anwalt-navigation.tparrows.tp-leftarrow%3Abefore%7B%0A%20%20content%3A%20%22%5Ce875%22%3B%0A%7D%0A%0A%23rev_slider_2_2_wrapper%20.anwalt-navigation.tparrows.tp-rightarrow%3Abefore%7B%0A%20%20content%3A%20%22%5Ce876%22%3B%0A%7D%0A%23rev_slider_2_2_wrapper%20.anwalt-navigation%20.tp-bullet%7B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20width%3A%2010px%3B%0A%20%20height%3A%2010px%3B%0A%20%20margin%3A%200%204px%3B%0A%20%20border-radius%3A%203em%3B%0A%20%20background-color%3A%20transparent%3B%0A%20%20border%3A%202px%20solid%20%23c2aa80%3B%0A%20%20box-sizing%3A%20border-box%3B%0A%20%20-webkit-transition%3A%20background-color%20.2s%20ease-out%2Cborder%20.2s%20ease-out%3B%0A%20%20-moz-transition%3A%20background-color%20.2s%20ease-out%2Cborder%20.2s%20ease-out%3B%0A%20%20transition%3A%20background-color%20.2s%20ease-out%2Cborder%20.2s%20ease-out%3B%0A%7D%0A%23rev_slider_2_2_wrapper%20.anwalt-navigation%20.tp-bullet.selected%2C%0A%23rev_slider_2_2_wrapper%20.anwalt-navigation%20.tp-bullet%3Ahover%20%7B%0A%20%20background-color%3A%20%23c2aa80%3B%0A%7D%0A"
-                                                                        );
+                                                                    );
                                                                     var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
                                                                     if (htmlDiv) {
                                                                         htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
@@ -830,7 +830,8 @@
                                                                         This allows us to work efficiently and ensures
                                                                         that we dissect the case mounted against our
                                                                         clients, to provide sound and robust advice at
-                                                                        early stages </span></p>
+                                                                        early stages </span>
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
