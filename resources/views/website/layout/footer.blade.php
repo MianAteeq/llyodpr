@@ -598,7 +598,7 @@ $contact_foot = \App\Models\Contact::first();
                                                 itemtype="https://schema.org/ImageObject">
                                                 <div class="fl-photo-content fl-photo-img-jpg">
                                                     <img class="fl-photo-img wp-image-6623 size-full law-firm-logo"
-                                                        src="https://lloydspr.com/images/law-firm.jpg"
+                                                        src="{{ asset('images/law-firm.jpg') }}"
                                                         alt="uk-top-tier-firm-2023" itemprop="image" style="">
                                                 </div>
                                             </div>
