@@ -113,12 +113,12 @@
                 <div class="mkdf-content-inner">
 
                     <div class="mkdf-title-holder mkdf-centered-type mkdf-title-va-header-bottom mkdf-title-content-va-middle mkdf-preload-background mkdf-has-bg-image mkdf-bg-parallax"
-                        style="height: 350px;background-color: rgba(194,170,128,0.08);background-image:url(public/website/assets/wp-content/uploads/2018/03/blog-title-img.jpg);"
+                        style="height: 350px;background-color: rgba(194,170,128,0.08);background-image:url(website/assets/wp-content/uploads/2018/03/blog-title-img.jpg);"
                         data-height="350">
 
                         <div class="mkdf-title-image">
 
-                            <img itemprop="image" src="<?php echo url('public/website/assets/wp-content/uploads/2018/03/blog-title-img.jpg'); ?>" alt="i" />
+                            <img itemprop="image" src="<?php echo url('website/assets/wp-content/uploads/2018/03/blog-title-img.jpg'); ?>" alt="i" />
 
                         </div>
 

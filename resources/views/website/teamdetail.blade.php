@@ -92,7 +92,7 @@
             <div class="mkdf-content">
                 <div class="mkdf-content-inner">
                     <div class="mkdf-title-holder mkdf-centered-type mkdf-title-va-header-bottom mkdf-title-content-va-middle mkdf-preload-background mkdf-has-bg-image mkdf-bg-parallax"
-                        style="height: 350px;background-color: rgba(194,170,128,0.08);background-image:url(<?php echo url('public/website/assets/wp-content/uploads/2018/03/port-title-img.jpg'); ?>);"
+                        style="height: 350px;background-color: rgba(194,170,128,0.08);background-image:url(<?php echo url('website/assets/wp-content/uploads/2018/03/port-title-img.jpg'); ?>);"
                         data-height="350">
                         <div class="mkdf-title-image">
                             <img itemprop="image"
@@ -122,7 +122,7 @@
                                                     <a itemprop="image" title="port-gallery-1"
                                                         data-rel="prettyPhoto[single_pretty_photo]"
                                                         href="assets/wp-content/uploads/2018/03/h2-team-1.jpg">
-                                                        <img itemprop="image" src="<?php echo asset('public/images' . '/' . $team->image); ?>" alt="i"
+                                                        <img itemprop="image" src="<?php echo asset('images' . '/' . $team->image); ?>" alt="i"
                                                             width="620">
                                                     </a>
                                                 </div>

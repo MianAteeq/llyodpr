@@ -77,11 +77,11 @@
 
             <a itemprop="url" href="{{url('/')}}" style="height: 50px;">
 
-              <img itemprop="image" class="mkdf-normal-logo" src="<?php echo asset('public/images' . '/' . \App\Models\Setting::first()->image) ?>" alt="logo" />
+              <img itemprop="image" class="mkdf-normal-logo" src="<?php echo asset('images' . '/' . \App\Models\Setting::first()->image) ?>" alt="logo" />
 
-              <img itemprop="image" class="mkdf-dark-logo" src="<?php echo asset('public/images' . '/' . \App\Models\Setting::first()->image) ?>" alt="dark logo" />
+              <img itemprop="image" class="mkdf-dark-logo" src="<?php echo asset('images' . '/' . \App\Models\Setting::first()->image) ?>" alt="dark logo" />
 
-              <img itemprop="image" class="mkdf-light-logo" src="<?php echo asset('public/images' . '/' . \App\Models\Setting::first()->image) ?>" alt="light logo" />
+              <img itemprop="image" class="mkdf-light-logo" src="<?php echo asset('images' . '/' . \App\Models\Setting::first()->image) ?>" alt="light logo" />
 
             </a>
 
@@ -356,11 +356,11 @@
 
               <a itemprop="url" href="{{url('/')}}" style="height: 50px;">
 
-                <img itemprop="image" class="mkdf-normal-logo" src="<?php echo asset('public/images' . '/' . \App\Models\Setting::first()->image) ?>" alt="logo" />
+                <img itemprop="image" class="mkdf-normal-logo" src="<?php echo asset('images' . '/' . \App\Models\Setting::first()->image) ?>" alt="logo" />
 
-                <img itemprop="image" class="mkdf-dark-logo" src="<?php echo asset('public/images' . '/' . \App\Models\Setting::first()->image) ?>" alt="dark logo" />
+                <img itemprop="image" class="mkdf-dark-logo" src="<?php echo asset('images' . '/' . \App\Models\Setting::first()->image) ?>" alt="dark logo" />
 
-                <img itemprop="image" class="mkdf-light-logo" src="<?php echo asset('public/images' . '/' . \App\Models\Setting::first()->image) ?>" alt="light logo" /> </a>
+                <img itemprop="image" class="mkdf-light-logo" src="<?php echo asset('images' . '/' . \App\Models\Setting::first()->image) ?>" alt="light logo" /> </a>
 
             </div>
 

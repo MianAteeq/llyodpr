@@ -257,7 +257,7 @@
             <a href="https://www.linkedin.com/company/lloydsprsolicitors/about/" target="_blank" class="google"><i
                     class="mkdf-social-icon-widget ion-social-linkedin"></i></a>
             <a href="https://uk.trustpilot.com/review/lloydspr.com" target="_blank" class="twitter"><img
-                    src="{{ URL::to('public/trust.png') }}" alt="Trust Pilot" /></a>
+                    src="{{ URL::to('trust.png') }}" alt="Trust Pilot" /></a>
 
         </div>
 

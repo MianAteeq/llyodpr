@@ -86,10 +86,10 @@
                 <div class="mkdf-content-inner">
 
                     <div class="mkdf-title-holder mkdf-centered-type mkdf-title-va-header-bottom mkdf-title-content-va-middle mkdf-preload-background mkdf-has-bg-image mkdf-bg-parallax"
-                        style="height: 430px;background-color: rgba(194,170,128,0.08);background-image:url(public/website/assets/wp-content/uploads/2018/03/Career-page.jpg);"
+                        style="height: 430px;background-color: rgba(194,170,128,0.08);background-image:url(website/assets/wp-content/uploads/2018/03/Career-page.jpg);"
                         data-height="430">
                         <div class="mkdf-title-image">
-                            <img itemprop="image" src="<?php echo url('public/website/assets/wp-content/uploads/2018/03/Career-page.jpg'); ?>" alt="k" />
+                            <img itemprop="image" src="<?php echo url('website/assets/wp-content/uploads/2018/03/Career-page.jpg'); ?>" alt="k" />
                         </div>
                         <div class="mkdf-title-wrapper" style="height: 430px">
                             <div class="mkdf-title-inner">
