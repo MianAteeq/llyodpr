@@ -12,8 +12,8 @@
 																		<!--<form action="{{url('team_detail',$team_val->id) }}" method="post" id="{{$team_val->id}}">-->
 																			<!--@csrf-->
 																			<!--<input type="hidden" name="id" value="{{$team_val->id}}">-->
-																			<!--<a href="javascript:void(0)" class="employeeLink"><img form_id="{{$team_val->id}}" width="800" height="578" src="{{asset('/public/images' . '/' .$team_val->image) }}" class="attachment-full size-full" alt="i" loading="lazy" /></a>-->
-																			 <a href="{{url('team_detail',str_replace(" ","_",$team_val->title)) }}" class="employeeLink"><img width="800" height="578" src="{{asset('/public/images' . '/' .$team_val->image) }}" class="attachment-full size-full" alt="i" loading="lazy" /></a> 
+																			<!--<a href="javascript:void(0)" class="employeeLink"><img form_id="{{$team_val->id}}" width="800" height="578" src="{{asset('/images' . '/' .$team_val->image) }}" class="attachment-full size-full" alt="i" loading="lazy" /></a>-->
+																			 <a href="{{url('team_detail',str_replace(" ","_",$team_val->title)) }}" class="employeeLink"><img width="800" height="578" src="{{asset('/images' . '/' .$team_val->image) }}" class="attachment-full size-full" alt="i" loading="lazy" /></a> 
 																		<!--</form>-->
 																	</div>
 																	<div class="mkdf-team-info">

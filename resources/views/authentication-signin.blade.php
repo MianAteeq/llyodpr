@@ -26,7 +26,7 @@
 				<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
 					<div class="col mx-auto">
 						<div class="mb-4 text-center">
-							<img src="https://lloydspr.com/public/images/16565939661.png" width="180" alt="" />
+							<img src="https://lloydspr.com/images/16565939661.png" width="180" alt="" />
 						</div>
 						<div class="card">
 							<div class="card-body">

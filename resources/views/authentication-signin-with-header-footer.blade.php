@@ -29,7 +29,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light bg-dark rounded fixed-top rounded-0 shadow-sm">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#">
-						<img src="https://lloydspr.com/public/images/1656593966.png" width="140" alt="" />
+						<img src="https://lloydspr.com/images/1656593966.png" width="140" alt="" />
 					</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
 					</button>

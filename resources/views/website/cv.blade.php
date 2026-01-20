@@ -16,6 +16,7 @@
         h6,
         a {
             font-family: Helvetica Neue", Helvetica, Arial, sans-serif!important;
+
         }
 
         .swiper-container.buttons-left .swiper-button-next:before {
@@ -55,15 +56,15 @@
     <title>Team</title>
     <link rel='stylesheet' id='wp-block-library-css' href='assets/style.css' media='all' />
     <!-- <link rel='stylesheet' id='wp-law-css'
-		href='https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/plugins/wp-law/public/dist/css/wp-law-public.min.css?ver=2.0.0'
-		media='all' /> -->
-    <link rel='stylesheet' id='fa-styles-css' href='//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=1.0' media='screen' />
-    <link rel='stylesheet' id='main-styles-css' href='{{asset("assets/style1.css")}}' media='screen' />
-    <script src='{{asset("assets/jquery.min.js")}}' id='jquery-core-js'></script>
-    <script src='{{asset("assets/jquery-migrate.min.js")}}' id='jquery-migrate-js'></script>
+  href='https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/plugins/wp-law/dist/css/wp-law-public.min.css?ver=2.0.0'
+  media='all' /> -->
+    <link rel='stylesheet' id='fa-styles-css'
+        href='//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=1.0' media='screen' />
+    <link rel='stylesheet' id='main-styles-css' href='{{ asset('assets/style1.css') }}' media='screen' />
+    <script src='{{ asset('assets/jquery.min.js') }}' id='jquery-core-js'></script>
+    <script src='{{ asset('assets/jquery-migrate.min.js') }}' id='jquery-migrate-js'></script>
 
     <style>
-   
         .no-js img.lazyload {
             display: none;
         }
@@ -351,215 +352,249 @@
         p strong {
             font-weight: bold !important;
         }
-         span strong {
+
+        span strong {
             font-weight: bold !important;
         }
+
         li strong {
             font-weight: bold !important;
         }
-    /*     header{*/
-    /*    display:none!important;*/
-    /*}*/
-    /*.mkdf-page-footer {*/
-    /*    display:none!important;*/
-    /*}*/
-    .card-body p {
-        margin-left: inherit!important;
-    }
+
+        /*     header{*/
+        /*    display:none!important;*/
+        /*}*/
+        /*.mkdf-page-footer {*/
+        /*    display:none!important;*/
+        /*}*/
+        .card-body p {
+            margin-left: inherit !important;
+        }
     </style>
 </head>
 
 
-<body class="barristers-template-default single single-barristers postid-632 home page-template page-template-full-width page-template-full-width-php page page-id-13 theme-anwalt anwalt-core-1.1.2 woocommerce-no-js anwalt-ver-1.4 mkdf-smooth-page-transitions mkdf-smooth-page-transitions-preloader mkdf-grid-1300 mkdf-sticky-header-on-scroll-down-up mkdf-dropdown-animate-height mkdf-header-standard mkdf-menu-area-shadow-disable mkdf-menu-area-in-grid-shadow-disable mkdf-menu-area-in-grid-border-disable mkdf-logo-area-border-disable mkdf-side-menu-slide-from-right mkdf-woocommerce-columns-3 mkdf-woo-normal-space mkdf-woo-pl-info-below-image mkdf-woo-single-thumb-below-image mkdf-woo-single-has-pretty-photo mkdf-default-mobile-header mkdf-sticky-up-mobile-header mkdf-header-top-enabled mkdf-search-covers-header wpb-js-composer js-comp-ver-6.4.1 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
+<body
+    class="barristers-template-default single single-barristers postid-632 home page-template page-template-full-width page-template-full-width-php page page-id-13 theme-anwalt anwalt-core-1.1.2 woocommerce-no-js anwalt-ver-1.4 mkdf-smooth-page-transitions mkdf-smooth-page-transitions-preloader mkdf-grid-1300 mkdf-sticky-header-on-scroll-down-up mkdf-dropdown-animate-height mkdf-header-standard mkdf-menu-area-shadow-disable mkdf-menu-area-in-grid-shadow-disable mkdf-menu-area-in-grid-border-disable mkdf-logo-area-border-disable mkdf-side-menu-slide-from-right mkdf-woocommerce-columns-3 mkdf-woo-normal-space mkdf-woo-pl-info-below-image mkdf-woo-single-thumb-below-image mkdf-woo-single-has-pretty-photo mkdf-default-mobile-header mkdf-sticky-up-mobile-header mkdf-header-top-enabled mkdf-search-covers-header wpb-js-composer js-comp-ver-6.4.1 vc_responsive"
+    itemscope itemtype="http://schema.org/WebPage">
     <?php echo view('website/layout/sidebar'); ?>
     <div class="container-fluid">
-       
+
         <div style="background-color:white;">
             <?php echo view('website.layout.nav'); ?>
             <?php echo view('website.layout.nav-mobile'); ?>
         </div>
-      
+
         <div id="content">
-        <div class="section bg-grad">
-            <div class="row align-items-center">
-                <div class="col-md-4">
-                    <div class="panel" style="padding-bottom:0px !important ;">
-                        @if (!empty($cv->image))
-                        <img src="{{asset('/public/images' . '/' .$cv->image) }}" alt="" />
-                        @else
-                        <img src="{{ asset('/public/images/1657711341.jpg') }}" alt="" />
-                        @endif
+            <div class="section bg-grad">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="panel" style="padding-bottom:0px !important ;">
+                            @if (!empty($cv->image))
+                                <img src="{{ asset('/images' . '/' . $cv->image) }}" alt="" />
+                            @else
+                                <img src="{{ asset('/images/1657711341.jpg') }}" alt="" />
+                            @endif
 
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="panel">
-                        @if (!empty($cv->name))
-                        <h1 style="color:white;word-spacing: 9999px;">{{strtoupper($cv->name)}}</h1>
-                        <h3 style="color:white"> {{$team}}</h3>
+                    <div class="col-md-6">
+                        <div class="panel">
+                            @if (!empty($cv->name))
+                                <h1 style="color:white;word-spacing: 9999px;">{{ strtoupper($cv->name) }}</h1>
+                                <h3 style="color:white"> {{ $team }}</h3>
+                            @else
+                                <h1 style="color:white">Name</h1>
+                            @endif
 
-                        @else
-                        <h1 style="color:white">Name</h1>
-                        @endif
-
-                        <!-- <div class="seniority">
+                            <!-- <div class="seniority">
                             <div class="date call">
                                 @if (!empty($team))
-                                <span style="font-family: Lustria, serif!important;">{{$team}}</span>
-                                @else
-                                <span style="font-family: Lustria, serif!important;">Designation</span>
-                                @endif
+<span style="font-family: Lustria, serif!important;">{{ $team }}</span>
+@else
+<span style="font-family: Lustria, serif!important;">Designation</span>
+@endif
                             </div>
                         </div> -->
-                        <div class="swiper-container buttons-left">
-                            <div class="swiper-wrapper" style="margin-bottom: 13px;">
-                                @if (!empty($cv_desc))
-                                @foreach($cv_desc as $cv_desc_val)
-                                <div class="swiper-slide">
-                                   
-                                    @if(str_replace(' ', '', $cv_desc_val->description)!="")
-                                    <blockquote style="color:white;">
-                                        <p style="color:white; font-style:normal;"><?php echo $cv_desc_val->description; ?></p>
-                                    </blockquote>
+                            <div class="swiper-container buttons-left">
+                                <div class="swiper-wrapper" style="margin-bottom: 13px;">
+                                    @if (!empty($cv_desc))
+                                        @foreach ($cv_desc as $cv_desc_val)
+                                            <div class="swiper-slide">
+
+                                                @if (str_replace(' ', '', $cv_desc_val->description) != '')
+                                                    <blockquote style="color:white;">
+                                                        <p style="color:white; font-style:normal;"><?php echo $cv_desc_val->description; ?>
+                                                        </p>
+                                                    </blockquote>
+                                                @endif
+                                            </div>
+                                        @endforeach
+                                    @else
+                                        <div class="swiper-slide">
+                                            <blockquote style="color:white;">
+                                                <p style="color:white;"> </p>
+                                            </blockquote>
+                                        </div>
                                     @endif
-                                </div>
-                                @endforeach
-                                @else
-                                <div class="swiper-slide">
-                                    <blockquote style="color:white;">
-                                        <p style="color:white;"> </p>
-                                    </blockquote>
-                                </div>
-                                @endif
 
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
                             </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+
+
                         </div>
-
-
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="section bg-white">
-            <div class="row">
+            <div class="section bg-white">
+                <div class="row">
 
-                <div class="col-md-4 col-sm-12 bg-gradient">
+                    <div class="col-md-4 col-sm-12 bg-gradient">
 
-                    <ul class="barrister-links" style="margin-right: 1.875rem;margin-left: 1.875rem;">
-                        <!-- <li><a title="Portfolio" class="addtoport-icon addlinkbutton "
-								href="https://www.2bedfordrow.co.uk/barrister/kieran-vaughan-qc/"
-								onclick="javascript: wp_law_gaClicks('Profile Links', 'Add to portfolio', 'Kieran Vaughan QC', '', true );"
-								data-id="632" data-name="Kieran Vaughan QC"
-								data-areas="[&quot;547&quot;,&quot;543&quot;,&quot;539&quot;]"
-								data-titles="[&quot;Fraud&quot;,&quot;Crime&quot;,&quot;Appeals&quot;]"
-								data-type="barristers" data-typename="Barrister"
-								data-iconstate="&lt;span class=&quot;icon fa fa-list-alt&quot;&gt;&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Added&lt;/span&gt;"
-								data-isadded="0"><span class="icon fa fa-list-alt"></span><span class="label">Add to
-									shortlist</span></a></li> -->
-                        <!-- <li><a href="mailto:&#99;&#108;&#101;&#114;k&#115;&#64;2&#98;&#101;&#100;&#102;&#111;&#114;d&#114;ow.&#99;&#111;.&#117;k" onclick="javascript: tela_gaClicks( 'profile_email', 'kieran-vaughan-qc', 'Kieran Vaughan QC' );"><span class="icon fa fa-envelope"></span><span class="label">Click to email</span></a> -->
-                        <li><a href="mailto:{{$cv->email??''}}"><span class="icon fa fa-envelope"></span><span class="label">Click to email</span></a>
-                        </li>
-                        <!-- <li><a href="tel:+442074408888" onclick="javascript: tela_gaClicks( 'profile_tel', 'kieran-vaughan-qc', 'Kieran Vaughan QC' );"><span class="icon fa fa-phone"></span><span class="label">+44 (0)20 7440 8888</span></a> -->
-                        <li><a href="tel:{!! !empty($cv->phone) ? $cv->phone : '' !!}"><span class="icon fas fa-phone"></span><span class="label">Click to phone</span></a>
-                        </li>
-                             <li><a id="cmd" href="{{route('print.pdf',$cv->id)}}" target="_blank"><span class="icon fa fa-file"></span><span class="label">Profile (PDF)</span></a></li>
-                       
-                        <?php if (!empty($cv->cvf)) { ?>
-                            <li><a href="{{asset('/public/images' . '/' .$cv->cvf) }}"><span class="icon fa fa-id-card"></span><span class="label">vCard</span></a></li>
-                        <?php } ?>
-                    </ul>
+                        <ul class="barrister-links" style="margin-right: 1.875rem;margin-left: 1.875rem;">
+                            <!-- <li><a title="Portfolio" class="addtoport-icon addlinkbutton "
+        href="https://www.2bedfordrow.co.uk/barrister/kieran-vaughan-qc/"
+        onclick="javascript: wp_law_gaClicks('Profile Links', 'Add to portfolio', 'Kieran Vaughan QC', '', true );"
+        data-id="632" data-name="Kieran Vaughan QC"
+        data-areas="[&quot;547&quot;,&quot;543&quot;,&quot;539&quot;]"
+        data-titles="[&quot;Fraud&quot;,&quot;Crime&quot;,&quot;Appeals&quot;]"
+        data-type="barristers" data-typename="Barrister"
+        data-iconstate="&lt;span class=&quot;icon fa fa-list-alt&quot;&gt;&lt;/span&gt;&lt;span class=&quot;label&quot;&gt;Added&lt;/span&gt;"
+        data-isadded="0"><span class="icon fa fa-list-alt"></span><span class="label">Add to
+         shortlist</span></a></li> -->
+                            <!-- <li><a href="mailto:&#99;&#108;&#101;&#114;k&#115;&#64;2&#98;&#101;&#100;&#102;&#111;&#114;d&#114;ow.&#99;&#111;.&#117;k" onclick="javascript: tela_gaClicks( 'profile_email', 'kieran-vaughan-qc', 'Kieran Vaughan QC' );"><span class="icon fa fa-envelope"></span><span class="label">Click to email</span></a> -->
+                            <li><a href="mailto:{{ $cv->email ?? '' }}"><span class="icon fa fa-envelope"></span><span
+                                        class="label">Click to email</span></a>
+                            </li>
+                            <!-- <li><a href="tel:+442074408888" onclick="javascript: tela_gaClicks( 'profile_tel', 'kieran-vaughan-qc', 'Kieran Vaughan QC' );"><span class="icon fa fa-phone"></span><span class="label">+44 (0)20 7440 8888</span></a> -->
+                            <li><a href="tel:{!! !empty($cv->phone) ? $cv->phone : '' !!}"><span class="icon fas fa-phone"></span><span
+                                        class="label">Click to phone</span></a>
+                            </li>
+                            <li><a id="cmd" href="{{ route('print.pdf', $cv->id) }}" target="_blank"><span
+                                        class="icon fa fa-file"></span><span class="label">Profile (PDF)</span></a>
+                            </li>
+
+                            <?php if (!empty($cv->cvf)) { ?>
+                            <li><a href="{{ asset('/images' . '/' . $cv->cvf) }}"><span
+                                        class="icon fa fa-id-card"></span><span class="label">vCard</span></a></li>
+                            <?php } ?>
+                        </ul>
 
 
-                    <div id="side-accordion" role="tablist" class="panel lg rm accordions">
+                        <div id="side-accordion" role="tablist" class="panel lg rm accordions">
 
-                        <div class="card bg-shadow">
-                            <a data-toggle="collapse" href="#bcollapseExtra-lawyer_publications" role="button" aria-expanded="true" aria-controls="bcollapseExtra-lawyer_publications" class="btn btn-light btn-block">
-                                Language <span class="fa fa-chevron-down"></span>
-                            </a>
+                            <div class="card bg-shadow">
+                                <a data-toggle="collapse" href="#bcollapseExtra-lawyer_publications" role="button"
+                                    aria-expanded="true" aria-controls="bcollapseExtra-lawyer_publications"
+                                    class="btn btn-light btn-block">
+                                    Language <span class="fa fa-chevron-down"></span>
+                                </a>
 
-                            <div id="bcollapseExtra-lawyer_publications" class="collapse" role="tabpanel" data-parent="#side-accordion">
-                                <div class="card-body">
-                                    {!! !empty($cv->publication) ? $cv->publication : '' !!}
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card bg-shadow">
-                            <a data-toggle="collapse" href="#bcollapseExtra-lawyer_memberships" role="button" aria-expanded="true" aria-controls="bcollapseExtra-lawyer_memberships" class="btn btn-light btn-block">
-                                Memberships <span class="fa fa-chevron-down"></span>
-                            </a>
-
-                            <div id="bcollapseExtra-lawyer_memberships" class="collapse" role="tabpanel" data-parent="#side-accordion">
-                                <div class="card-body">
-                                    {!! !empty($cv->membership) ? $cv->membership : '' !!}
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card bg-shadow">
-                            <a data-toggle="collapse" href="#bcollapseExtra-lawyer_directory_quotes" role="button" aria-expanded="true" aria-controls="bcollapseExtra-lawyer_directory_quotes" class="btn btn-light btn-block">
-                                Education <span class="fa fa-chevron-down"></span>
-                            </a>
-
-                            <div id="bcollapseExtra-lawyer_directory_quotes" class="collapse" role="tabpanel" data-parent="#side-accordion">
-                                <div class="card-body">
-                                    {!! !empty($cv->quotes) ? $cv->quotes : '' !!}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="panel lg rp-top rm-top">
-						<div class="panel bg-darkgreen rm">
-							<p class="h4">Instructing Kieran Vaughan QC</p>
-							<p>To instruct Kieran or for any further information please contact our clerks.</p>
-						</div>
-						<div class="panel bg-secondary rm" style="display:flex; justify-content:flex-start;">
-							<img src="http://localhost/llords-front1/assets/wp-content/uploads/2019/04/profile-medium.jpg" alt="profile" width="85" height="85">
-							<p style="margin-top:0px; margin-left:10px;"><b>Clerk: John Grimmer</b><br>
-								Telephone: <a href="tel:+447776154664">+44 (0)7776 154 664</a><br>
-								Email: <a
-									href="mailto:&#106;&#103;rimmer&#64;2&#98;e&#100;fo&#114;&#100;r&#111;&#119;&#46;c&#111;.&#117;k?subject=Website%20Enquiry">Click
-									here</a></p>
-						</div>
-					</div> -->
-                </div>
-
-                <div class="col-md-8 col-sm-12 bg-gray-100 order-first">
-
-                    <div class="panel lg rm-top">
-                        <div class="panel bg-white bg-shadow rm-top">
-                            <p style="font-family: Helvetica Neue", Helvetica, Arial, sans-serif!important;">
-                                {!! !empty($cv->description) ? $cv->description : '' !!}
-                            </p>
-                        </div>
-
-                        <div id="accordion" role="tablist" class="accordions">
-                            <h2>Practice Areas</h2>
-                            <div class="expertise-listings">
-
-                                @if(!empty($cv_practice))
-                                @foreach($cv_practice as $cv_practice_val)
-                                <div class="card bg-shadow accordion_fraud">
-                                    <a data-toggle="collapse" href="#colpase_id_{{$cv_practice_val->category['id']}}" role="button" aria-expanded="true" aria-controls="accordion_fraud" class="btn btn-white btn-block">
-                                        {{$cv_practice_val->category['name']}}<span class="fa fa-chevron-down"></span>
-                                    </a>
-                                    <a title="Portfolio" class="addtoport-icon addlinkbutton position-absolute single-add" href="https://www.2bedfordrow.co.uk/barrister/kieran-vaughan-qc/" onclick="javascript: wp_law_gaClicks('Profile Links', 'Add to portfolio', 'Fraud', '', true );" data-id="632" data-name="Fraud" data-areas="[&quot;547-0&quot;]" data-titles="[]" data-type="barristers" data-typename="Barrister" data-iconstate="&lt;span class=&quot;fa fa-star text-primary&quot;&gt;&lt;/span&gt;" data-isadded="0"><span class="fa fa-star-o text-primary"></span></a>
-                                    <div id="colpase_id_{{$cv_practice_val->category['id']}}" class=" accordion-item collapse " role="tabpanel" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>
-                                                <?php echo $cv_practice_val->description; ?>
-                                            </p>
-                                            <hr>
-                                        </div>
+                                <div id="bcollapseExtra-lawyer_publications" class="collapse" role="tabpanel"
+                                    data-parent="#side-accordion">
+                                    <div class="card-body">
+                                        {!! !empty($cv->publication) ? $cv->publication : '' !!}
                                     </div>
                                 </div>
-                                @endforeach
-                                @endif
+                            </div>
 
-                                <!-- <div class="card bg-shadow accordion_crime">
+                            <div class="card bg-shadow">
+                                <a data-toggle="collapse" href="#bcollapseExtra-lawyer_memberships" role="button"
+                                    aria-expanded="true" aria-controls="bcollapseExtra-lawyer_memberships"
+                                    class="btn btn-light btn-block">
+                                    Memberships <span class="fa fa-chevron-down"></span>
+                                </a>
+
+                                <div id="bcollapseExtra-lawyer_memberships" class="collapse" role="tabpanel"
+                                    data-parent="#side-accordion">
+                                    <div class="card-body">
+                                        {!! !empty($cv->membership) ? $cv->membership : '' !!}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card bg-shadow">
+                                <a data-toggle="collapse" href="#bcollapseExtra-lawyer_directory_quotes"
+                                    role="button" aria-expanded="true"
+                                    aria-controls="bcollapseExtra-lawyer_directory_quotes"
+                                    class="btn btn-light btn-block">
+                                    Education <span class="fa fa-chevron-down"></span>
+                                </a>
+
+                                <div id="bcollapseExtra-lawyer_directory_quotes" class="collapse" role="tabpanel"
+                                    data-parent="#side-accordion">
+                                    <div class="card-body">
+                                        {!! !empty($cv->quotes) ? $cv->quotes : '' !!}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="panel lg rp-top rm-top">
+      <div class="panel bg-darkgreen rm">
+       <p class="h4">Instructing Kieran Vaughan QC</p>
+       <p>To instruct Kieran or for any further information please contact our clerks.</p>
+      </div>
+      <div class="panel bg-secondary rm" style="display:flex; justify-content:flex-start;">
+       <img src="http://localhost/llords-front1/assets/wp-content/uploads/2019/04/profile-medium.jpg" alt="profile" width="85" height="85">
+       <p style="margin-top:0px; margin-left:10px;"><b>Clerk: John Grimmer</b><br>
+        Telephone: <a href="tel:+447776154664">+44 (0)7776 154 664</a><br>
+        Email: <a
+         href="mailto:&#106;&#103;rimmer&#64;2&#98;e&#100;fo&#114;&#100;r&#111;&#119;&#46;c&#111;.&#117;k?subject=Website%20Enquiry">Click
+         here</a></p>
+      </div>
+     </div> -->
+                    </div>
+
+                    <div class="col-md-8 col-sm-12 bg-gray-100 order-first">
+
+                        <div class="panel lg rm-top">
+                            <div class="panel bg-white bg-shadow rm-top">
+                                <p style="font-family: Helvetica Neue", Helvetica, Arial, sans-serif!important;">
+                                    {!! !empty($cv->description) ? $cv->description : '' !!}
+                                </p>
+                            </div>
+
+                            <div id="accordion" role="tablist" class="accordions">
+                                <h2>Practice Areas</h2>
+                                <div class="expertise-listings">
+
+                                    @if (!empty($cv_practice))
+                                        @foreach ($cv_practice as $cv_practice_val)
+                                            <div class="card bg-shadow accordion_fraud">
+                                                <a data-toggle="collapse"
+                                                    href="#colpase_id_{{ $cv_practice_val->category['id'] }}"
+                                                    role="button" aria-expanded="true"
+                                                    aria-controls="accordion_fraud" class="btn btn-white btn-block">
+                                                    {{ $cv_practice_val->category['name'] }}<span
+                                                        class="fa fa-chevron-down"></span>
+                                                </a>
+                                                <a title="Portfolio"
+                                                    class="addtoport-icon addlinkbutton position-absolute single-add"
+                                                    href="https://www.2bedfordrow.co.uk/barrister/kieran-vaughan-qc/"
+                                                    onclick="javascript: wp_law_gaClicks('Profile Links', 'Add to portfolio', 'Fraud', '', true );"
+                                                    data-id="632" data-name="Fraud" data-areas="[&quot;547-0&quot;]"
+                                                    data-titles="[]" data-type="barristers" data-typename="Barrister"
+                                                    data-iconstate="&lt;span class=&quot;fa fa-star text-primary&quot;&gt;&lt;/span&gt;"
+                                                    data-isadded="0"><span
+                                                        class="fa fa-star-o text-primary"></span></a>
+                                                <div id="colpase_id_{{ $cv_practice_val->category['id'] }}"
+                                                    class=" accordion-item collapse " role="tabpanel"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <p>
+                                                            <?php echo $cv_practice_val->description; ?>
+                                                        </p>
+                                                        <hr>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                    @endif
+
+                                    <!-- <div class="card bg-shadow accordion_crime">
                                     <a data-toggle="collapse" href="#accordion_crime" role="button" aria-expanded="true" aria-controls="accordion_crime" class="btn btn-white btn-block">
                                         Crime<span class="fa fa-chevron-down"></span>
                                     </a>
@@ -758,47 +793,47 @@
                                         </div>
                                     </div>
                                 </div> -->
+                                </div>
+
+
+                                <!-- <div class="card bg-shadow">
+        <a class="collapsed btn btn-secondary btn-block" data-toggle="collapse"
+         href="#acc_related_news" role="button" aria-expanded="false"
+         aria-controls="acc_related_news">
+         Related News <span class="fa fa-chevron-down"></span>
+        </a>
+        <div id="acc_related_news" class="collapse show" role="tabpanel"
+         data-parent="#accordion">
+         <div class="card-body">
+          <div class="articles related-article">
+           <div class="article">
+            <div class="bg">
+             <div class="wrap">
+              <span class="category"><a
+                href="https://www.2bedfordrow.co.uk/category/news/"
+                rel="category tag">News</a></span>
+              <span class="date">3rd June 2021</span>
+              <div class="bottom">
+               <h3><a
+                 href="https://www.2bedfordrow.co.uk/jim-sturman-qc-and-kieran-vaughan-qc-defend-in-the-metropolitan-polices-largest-ever-cash-seizure/">Jim
+                 Sturman QC and Kieran Vaughan QC defend in the
+                 Metropolitan...</a></h3>
+               <p>Jim Sturman QC and Kieran Vaughan QC, instructed by Amjid
+                Jabbar at Stokoe Partnership, acted for S&#8230;</p>
+              </div>
+             </div>
+            </div>
+           </div>
+
+          </div>
+         </div>
+        </div>
+       </div> -->
+
                             </div>
 
-
-                            <!-- <div class="card bg-shadow">
-								<a class="collapsed btn btn-secondary btn-block" data-toggle="collapse"
-									href="#acc_related_news" role="button" aria-expanded="false"
-									aria-controls="acc_related_news">
-									Related News <span class="fa fa-chevron-down"></span>
-								</a>
-								<div id="acc_related_news" class="collapse show" role="tabpanel"
-									data-parent="#accordion">
-									<div class="card-body">
-										<div class="articles related-article">
-											<div class="article">
-												<div class="bg">
-													<div class="wrap">
-														<span class="category"><a
-																href="https://www.2bedfordrow.co.uk/category/news/"
-																rel="category tag">News</a></span>
-														<span class="date">3rd June 2021</span>
-														<div class="bottom">
-															<h3><a
-																	href="https://www.2bedfordrow.co.uk/jim-sturman-qc-and-kieran-vaughan-qc-defend-in-the-metropolitan-polices-largest-ever-cash-seizure/">Jim
-																	Sturman QC and Kieran Vaughan QC defend in the
-																	Metropolitan...</a></h3>
-															<p>Jim Sturman QC and Kieran Vaughan QC, instructed by Amjid
-																Jabbar at Stokoe Partnership, acted for S&#8230;</p>
-														</div>
-													</div>
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div> -->
-
                         </div>
-
                     </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -807,21 +842,21 @@
     <div class="overlay" id="overlay-expertise">
         <div class="panel  text-center">
             <!-- <a href="#">
-				<img alt=""
-					data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
-					class="lazyload"
-					src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-						alt=""
-						data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
-						class="lazyload"
-						src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-							alt=""
-							data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
-							class="lazyload"
-							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-								src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
-								alt=""></noscript></noscript></noscript>
-			</a> -->
+    <img alt=""
+     data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
+     class="lazyload"
+     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+      alt=""
+      data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
+      class="lazyload"
+      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+       alt=""
+       data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
+       class="lazyload"
+       src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+        src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
+        alt=""></noscript></noscript></noscript>
+   </a> -->
         </div>
         <div class="panel text-center">
             <p><a href="#overlay-expertise" class="h2 text-white toggle"><span class="fa fa-close"></span></a></p>
@@ -841,16 +876,19 @@
                         <ul class="overlay-menu bordered">
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/advisory/">Advisory</a></li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/appeals/">Appeals</a></li>
-                            <li><a href="https://www.2bedfordrow.co.uk/practice-area/business-crime/">Business Crime</a>
+                            <li><a href="https://www.2bedfordrow.co.uk/practice-area/business-crime/">Business
+                                    Crime</a>
                             </li>
-                            <li><a href="https://www.2bedfordrow.co.uk/practice-area/civil-asset-recovery-and-forfeiture/">Civil
+                            <li><a
+                                    href="https://www.2bedfordrow.co.uk/practice-area/civil-asset-recovery-and-forfeiture/">Civil
                                     Asset Recovery &#038; Forfeiture</a></li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/confiscation/">Confiscation</a>
                             </li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/coroners-inquests/">Coroner&#8217;s
                                     Inquests</a></li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/crime/">Crime</a></li>
-                            <li><a href="https://www.2bedfordrow.co.uk/practice-area/cyber-security/">Cyber Security</a>
+                            <li><a href="https://www.2bedfordrow.co.uk/practice-area/cyber-security/">Cyber
+                                    Security</a>
                             </li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/defence/">Defence</a></li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/environmental/">Environmental</a>
@@ -888,7 +926,7 @@
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/professional-discipline/">Professional
                                     Discipline</a></li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/prosecution/">Prosecution</a></li>
-                            <li><a href="https://www.2bedfordrow.co.uk/practice-area/public-inquiries/">Public
+                            <li><a href="https://www.2bedfordrow.co.uk/practice-area-inquiries/">Public
                                     Inquiries</a></li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/regulatory/">Regulatory</a></li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/road-traffic/">Road Traffic</a>
@@ -908,28 +946,30 @@
     <div class="overlay" id="overlay-search">
         <div class="panel  text-center">
             <!-- <a href="#">
-				<img alt=""
-					data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
-					class="lazyload"
-					src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-						alt=""
-						data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
-						class="lazyload"
-						src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-							alt=""
-							data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
-							class="lazyload"
-							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-								src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
-								alt=""></noscript></noscript></noscript>
-			</a> -->
+    <img alt=""
+     data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
+     class="lazyload"
+     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+      alt=""
+      data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
+      class="lazyload"
+      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+       alt=""
+       data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
+       class="lazyload"
+       src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+        src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
+        alt=""></noscript></noscript></noscript>
+   </a> -->
         </div>
         <div class="panel  text-center">
             <p><a href="#overlay-search" class="h2 text-white toggle"><span class="fa fa-close"></span></a></p>
             <p class="h2">Search Site</p>
             <div class="searchblock light">
-                <form class="searcharea" action="https://www.2bedfordrow.co.uk/" method="get" accept-charset="utf-8" style="width:100%;">
-                    <input type="text" class="searchfield" placeholder="Search..." name="s" autocomplete="off">
+                <form class="searcharea" action="https://www.2bedfordrow.co.uk/" method="get"
+                    accept-charset="utf-8" style="width:100%;">
+                    <input type="text" class="searchfield" placeholder="Search..." name="s"
+                        autocomplete="off">
                     <button class="searchbutton"><span class="fa fa-search"></span></button>
                 </form>
             </div>
@@ -938,21 +978,21 @@
     <div class="overlay" id="overlay-menu">
         <div class="panel  text-center">
             <!-- <a href="#">
-				<img alt=""
-					data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
-					class="lazyload"
-					src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-						alt=""
-						data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
-						class="lazyload"
-						src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-							alt=""
-							data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
-							class="lazyload"
-							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
-								src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
-								alt=""></noscript></noscript></noscript>
-			</a> -->
+    <img alt=""
+     data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
+     class="lazyload"
+     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+      alt=""
+      data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
+      class="lazyload"
+      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+       alt=""
+       data-src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
+       class="lazyload"
+       src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img
+        src="https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/themes/2br-v2/assets/img/logo.svg"
+        alt=""></noscript></noscript></noscript>
+   </a> -->
         </div>
         <div class="panel  text-center">
             <p><a href="#overlay-menu" class="h2 text-white toggle"><span class="fa fa-close"></span></a></p>
@@ -966,9 +1006,11 @@
                         <ul class="bordered">
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/advisory/">Advisory</a></li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/appeals/">Appeals</a></li>
-                            <li><a href="https://www.2bedfordrow.co.uk/practice-area/business-crime/">Business Crime</a>
+                            <li><a href="https://www.2bedfordrow.co.uk/practice-area/business-crime/">Business
+                                    Crime</a>
                             </li>
-                            <li><a href="https://www.2bedfordrow.co.uk/practice-area/civil-asset-recovery-and-forfeiture/">Civil
+                            <li><a
+                                    href="https://www.2bedfordrow.co.uk/practice-area/civil-asset-recovery-and-forfeiture/">Civil
                                     Asset Recovery &amp; Forfeiture</a></li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/confiscation/">Confiscation</a>
                             </li>
@@ -977,7 +1019,8 @@
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/coroners-inquests/">Coroner&#8217;s
                                     Inquests</a></li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/crime/">Crime</a></li>
-                            <li><a href="https://www.2bedfordrow.co.uk/practice-area/cyber-security/">Cyber Security</a>
+                            <li><a href="https://www.2bedfordrow.co.uk/practice-area/cyber-security/">Cyber
+                                    Security</a>
                             </li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/defence/">Defence</a></li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/environmental/">Environmental</a>
@@ -1003,7 +1046,8 @@
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/media/">Media</a></li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/military-law/">Military Law</a>
                             </li>
-                            <li><a href="https://www.2bedfordrow.co.uk/practice-area/modern-slavery/">Modern Slavery</a>
+                            <li><a href="https://www.2bedfordrow.co.uk/practice-area/modern-slavery/">Modern
+                                    Slavery</a>
                             </li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/murder-and-manslaughter/">Murder
                                     &amp; Manslaughter</a></li>
@@ -1013,7 +1057,7 @@
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/professional-discipline/">Professional
                                     Discipline</a></li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/prosecution/">Prosecution</a></li>
-                            <li><a href="https://www.2bedfordrow.co.uk/practice-area/public-inquiries/">Public
+                            <li><a href="https://www.2bedfordrow.co.uk/practice-area-inquiries/">Public
                                     Inquiries</a></li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/regulatory/">Regulatory</a></li>
                             <li><a href="https://www.2bedfordrow.co.uk/practice-area/road-traffic/">Road Traffic</a>
@@ -1059,7 +1103,8 @@
             <div class="searcharea">
                 <form action="get">
                     <div class="searchwrap">
-                        <div class="col-field"><input type="text" name="s" value="" placeholder="Search..."></div>
+                        <div class="col-field"><input type="text" name="s" value=""
+                                placeholder="Search..."></div>
                         <div class="col-btn">
                             <button><span class="fa fa-search"></span></button>
                         </div>
@@ -1069,23 +1114,36 @@
         </div>
         <div id="nav" class="mobile-panel">
             <ul id="menu-mobile-menu" class="nav_mobile">
-                <li id="menu-item-1185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1185"><a href="https://www.2bedfordrow.co.uk/">Home</a></li>
-                <li id="menu-item-1200" class="menu-item menu-item-type-post_type_archive menu-item-object-practice-areas menu-item-1200"><a href="https://www.2bedfordrow.co.uk/practice-areas/">Practice Areas</a></li>
-                <li id="menu-item-1191" class="menu-item menu-item-type-post_type_archive menu-item-object-barristers menu-item-1191"><a href="https://www.2bedfordrow.co.uk/barristers/">Barristers</a></li>
-                <li id="menu-item-1192" class="menu-item menu-item-type-post_type_archive menu-item-object-clerks menu-item-1192"><a href="https://www.2bedfordrow.co.uk/clerks/">Clerks</a></li>
-                <li id="menu-item-1187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1187">
+                <li id="menu-item-1185"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1185"><a
+                        href="https://www.2bedfordrow.co.uk/">Home</a></li>
+                <li id="menu-item-1200"
+                    class="menu-item menu-item-type-post_type_archive menu-item-object-practice-areas menu-item-1200">
+                    <a href="https://www.2bedfordrow.co.uk/practice-areas/">Practice Areas</a></li>
+                <li id="menu-item-1191"
+                    class="menu-item menu-item-type-post_type_archive menu-item-object-barristers menu-item-1191"><a
+                        href="https://www.2bedfordrow.co.uk/barristers/">Barristers</a></li>
+                <li id="menu-item-1192"
+                    class="menu-item menu-item-type-post_type_archive menu-item-object-clerks menu-item-1192"><a
+                        href="https://www.2bedfordrow.co.uk/clerks/">Clerks</a></li>
+                <li id="menu-item-1187"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1187">
                     <a href="https://www.2bedfordrow.co.uk/about-us/">About Us</a>
                 </li>
-                <li id="menu-item-1189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1189">
+                <li id="menu-item-1189"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1189">
                     <a href="https://www.2bedfordrow.co.uk/direct-access/">Direct Access</a>
                 </li>
-                <li id="menu-item-1190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1190">
+                <li id="menu-item-1190"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1190">
                     <a href="https://www.2bedfordrow.co.uk/pupillage/">Pupillage / Mini Pupillage</a>
                 </li>
-                <li id="menu-item-1186" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1186">
+                <li id="menu-item-1186"
+                    class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1186">
                     <a href="https://www.2bedfordrow.co.uk/insights/">Insights</a>
                 </li>
-                <li id="menu-item-1188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1188">
+                <li id="menu-item-1188"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1188">
                     <a href="https://www.2bedfordrow.co.uk/contact-us/">Contact Us</a>
                 </li>
             </ul>
@@ -1101,99 +1159,97 @@
     </header>
 
     <!-- <div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
-	<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+ <div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
 
-	<div class="builder-overlay">
-		<div class="builder-wrapper">
-			<div class="builder-title-bar">
-				<p class="h3 builder-title">Portfolio Builder</p>
-				<a href="#" class="builder-close" title="close"><span class="icon-close"></span></a>
-			</div>
-			<div class="builder-meta">
-				<p>Select the practice areas that you would like to download or add to the portfolio</p>
-				<ul>
-				</ul>
-				<a href="#" class="button btn download">Download&nbsp;&nbsp;&nbsp;<span
-						class="icon-download"></span></a> <a href="#" class="button btn add">Add to
-					portfolio&nbsp;&nbsp;&nbsp;<span class="icon-plus"></span></a>
-			</div>
-		</div>
-	</div>
-	<div id="portfolio">
-		<div class="barristerportfolio">
-			<div class="portfoliowrap">
-				<div class="portfolio">
-					<div class="portfolio-header">
-						Portfolio <a href="#portfolio" class="sl-close"><span class="icon-close"></span></a>
-					</div>
-					<div class="portfoliocontent">
-						<div id="sl-table-wrapper">
-							<table id="sl-table" class="sl-table">
-								<thead>
-									<tr>
-										<th class="screenonly-inline"></th>
-										<th>Title</th>
-										<th>Type</th>
-										<th class="sl-centre">CV</th>
-										<th class="sl-centre screenonly-inline">Email</th>
-										<th class="email-remove"></th>
-									</tr>
-								</thead>
-								<tbody>
-								</tbody>
-							</table>
-						</div>
-						<p class="text-right"><a href="#" class="remove-all">Remove All</a></p>
-						<p class="text-center"><a href="#" class="button btn download">Download <span
-									class="icon-download"></span></a></p>
+ <div class="builder-overlay">
+  <div class="builder-wrapper">
+   <div class="builder-title-bar">
+    <p class="h3 builder-title">Portfolio Builder</p>
+    <a href="#" class="builder-close" title="close"><span class="icon-close"></span></a>
+   </div>
+   <div class="builder-meta">
+    <p>Select the practice areas that you would like to download or add to the portfolio</p>
+    <ul>
+    </ul>
+    <a href="#" class="button btn download">Download&nbsp;&nbsp;&nbsp;<span
+      class="icon-download"></span></a> <a href="#" class="button btn add">Add to
+     portfolio&nbsp;&nbsp;&nbsp;<span class="icon-plus"></span></a>
+   </div>
+  </div>
+ </div>
+ <div id="portfolio">
+  <div class="barristerportfolio">
+   <div class="portfoliowrap">
+    <div class="portfolio">
+     <div class="portfolio-header">
+      Portfolio <a href="#portfolio" class="sl-close"><span class="icon-close"></span></a>
+     </div>
+     <div class="portfoliocontent">
+      <div id="sl-table-wrapper">
+       <table id="sl-table" class="sl-table">
+        <thead>
+         <tr>
+          <th class="screenonly-inline"></th>
+          <th>Title</th>
+          <th>Type</th>
+          <th class="sl-centre">CV</th>
+          <th class="sl-centre screenonly-inline">Email</th>
+          <th class="email-remove"></th>
+         </tr>
+        </thead>
+        <tbody>
+        </tbody>
+       </table>
+      </div>
+      <p class="text-right"><a href="#" class="remove-all">Remove All</a></p>
+      <p class="text-center"><a href="#" class="button btn download">Download <span
+         class="icon-download"></span></a></p>
 
-						<hr>
-						<p><a href="#portfolioshare" class="portfolioshare">Click here</a> to share this
-							shortlist.<br><em><small>(It will expire after 30 days.)</small></em></p>
-						<div class="pdf-share-link">
-							<input type="text" value="" id="pdfsharelink" class="form-control" readonly>
-							<button id="pdf_share_link" class="btn btn-primary" onclick="wp_law_share_link()">Copy
-								link</button>
-						</div>
-						<hr>
-						<div id="sl-footer">
-							<p>Need more information about the above Barristers and Practice Areas?<br>Talk to one of
-								our clerks: +44 (0)20 7440 8888</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
+      <hr>
+      <p><a href="#portfolioshare" class="portfolioshare">Click here</a> to share this
+       shortlist.<br><em><small>(It will expire after 30 days.)</small></em></p>
+      <div class="pdf-share-link">
+       <input type="text" value="" id="pdfsharelink" class="form-control" readonly>
+       <button id="pdf_share_link" class="btn btn-primary" onclick="wp_law_share_link()">Copy
+        link</button>
+      </div>
+      <hr>
+      <div id="sl-footer">
+       <p>Need more information about the above Barristers and Practice Areas?<br>Talk to one of
+        our clerks: +44 (0)20 7440 8888</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div> -->
     <!-- <link rel='stylesheet' id='cookie-law-info-table-css'
-		href='https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-table.css?ver=2.1.2'
-		media='all' />
-	<script
-		src='https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=3.9.11'
-		id='smush-lazy-load-js'></script> -->
+  href='https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/plugins/cookie-law-info/css/cookie-law-info-table.css?ver=2.1.2'
+  media='all' />
+ <script
+     src='https://2oq5cg28288838bmfu32g94v-wpengine.netdna-ssl.com/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=3.9.11'
+     id='smush-lazy-load-js'></script> -->
     <script src='//maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js?ver=1.0' id='bootstrap-js-js'></script>
 
-    <script src='{{asset("assets/scripts.min.js")}}' id='main-js-js'></script>
+    <script src='{{ asset('assets/scripts.min.js') }}' id='main-js-js'></script>
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
-<script>
-    
-// var doc = new jsPDF();
-// var specialElementHandlers = {
-//     '#editor': function (element, renderer) {
-//         return true;
-//     }
-// };
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+    <script>
+        // var doc = new jsPDF();
+        // var specialElementHandlers = {
+        //     '#editor': function (element, renderer) {
+        //         return true;
+        //     }
+        // };
 
-// $('#cmd').click(function () {   
-//     doc.fromHTML($('#content').html(), 15, 15, {
-//         'width': 170,
-//             'elementHandlers': specialElementHandlers
-//     });
-//     doc.save('sample-file.pdf');
-// });
-
-</script>
+        // $('#cmd').click(function () {   
+        //     doc.fromHTML($('#content').html(), 15, 15, {
+        //         'width': 170,
+        //             'elementHandlers': specialElementHandlers
+        //     });
+        //     doc.save('sample-file.pdf');
+        // });
+    </script>
 
 
 

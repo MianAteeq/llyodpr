@@ -6,739 +6,775 @@
 
 <head>
 
-	<title>Blog</title>
+    <title>Blog</title>
 
 
 
-	<?php echo view('website/layout/header'); ?>
+    <?php echo view('website/layout/header'); ?>
 
-	<style>
-		.mkdf-blog-holder article .mkdf-post-excerpt:after {
-			content: unset;
-		}
+    <style>
+        .mkdf-blog-holder article .mkdf-post-excerpt:after {
+            content: unset;
+        }
 
-		.mkdf-rp-image {
-			vertical-align: unset !important;
-		}
-	</style>
+        .mkdf-rp-image {
+            vertical-align: unset !important;
+        }
+    </style>
 
 </head>
 
 
 
-<body class="page-template page-template-blog-standard page page-id-1123 page-child parent-pageid-2828 theme-anwalt anwalt-core-1.1.2 woocommerce-no-js anwalt-ver-1.4 mkdf-grid-1300 mkdf-sticky-header-on-scroll-down-up mkdf-dropdown-animate-height mkdf-header-standard mkdf-menu-area-shadow-disable mkdf-menu-area-in-grid-shadow-disable mkdf-menu-area-border-disable mkdf-menu-area-in-grid-border-disable mkdf-logo-area-border-disable mkdf-side-menu-slide-from-right mkdf-woocommerce-columns-3 mkdf-woo-normal-space mkdf-woo-pl-info-below-image mkdf-woo-single-thumb-below-image mkdf-woo-single-has-pretty-photo mkdf-default-mobile-header mkdf-sticky-up-mobile-header mkdf-header-top-enabled mkdf-search-covers-header wpb-js-composer js-comp-ver-6.4.1 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
+<body
+    class="page-template page-template-blog-standard page page-id-1123 page-child parent-pageid-2828 theme-anwalt anwalt-core-1.1.2 woocommerce-no-js anwalt-ver-1.4 mkdf-grid-1300 mkdf-sticky-header-on-scroll-down-up mkdf-dropdown-animate-height mkdf-header-standard mkdf-menu-area-shadow-disable mkdf-menu-area-in-grid-shadow-disable mkdf-menu-area-border-disable mkdf-menu-area-in-grid-border-disable mkdf-logo-area-border-disable mkdf-side-menu-slide-from-right mkdf-woocommerce-columns-3 mkdf-woo-normal-space mkdf-woo-pl-info-below-image mkdf-woo-single-thumb-below-image mkdf-woo-single-has-pretty-photo mkdf-default-mobile-header mkdf-sticky-up-mobile-header mkdf-header-top-enabled mkdf-search-covers-header wpb-js-composer js-comp-ver-6.4.1 vc_responsive"
+    itemscope itemtype="http://schema.org/WebPage">
 
-	<?php echo view('website/layout/sidebar'); ?>
+    <?php echo view('website/layout/sidebar'); ?>
 
-	<div class="mkdf-wrapper">
+    <div class="mkdf-wrapper">
 
-		<div class="mkdf-wrapper-inner">
+        <div class="mkdf-wrapper-inner">
 
-			<!-- <div class="mkdf-top-bar">
+            <!-- <div class="mkdf-top-bar">
 
-				<div class="mkdf-vertical-align-containers">
+    <div class="mkdf-vertical-align-containers">
 
-					<div class="mkdf-position-left">
+     <div class="mkdf-position-left">
 
-						<div class="mkdf-position-left-inner">
+      <div class="mkdf-position-left-inner">
 
-							<div id="text-2" class="widget widget_text mkdf-top-bar-widget">
+       <div id="text-2" class="widget widget_text mkdf-top-bar-widget">
 
-								<div class="textwidget">
+        <div class="textwidget">
 
-									<p>Opening hours / Monday &#8211; Friday / 09:30 &#8211; 5:00</p>
+         <p>Opening hours / Monday &#8211; Friday / 09:30 &#8211; 5:00</p>
 
-								</div>
+        </div>
 
-							</div>
+       </div>
 
-						</div>
+      </div>
 
-					</div>
+     </div>
 
-					<div class="mkdf-position-center">
+     <div class="mkdf-position-center">
 
-						<div class="mkdf-position-center-inner">
+      <div class="mkdf-position-center-inner">
 
-						</div>
+      </div>
 
-					</div>
+     </div>
 
-					<div class="mkdf-position-right">
+     <div class="mkdf-position-right">
 
-						<div class="mkdf-position-right-inner">
+      <div class="mkdf-position-right-inner">
 
-							<div class="widget mkdf-vertical-separator-widget mkdf-vertical-separator-full-height"><span class="mkdf-vsw-height-holder"></span><span class="mkdf-vsw" style="vertical-align:middle;height:100%;border-left-style:solid;margin-left:30px"></span>
-							</div>
-							<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#6c5835" style="color: #ffffff;;font-size: 18px;margin: 0px 0px 0px 30px;" href="{{\App\Models\Setting::first()->facebook}}" target="_blank">
-								<span class="mkdf-social-icon-widget   ion-social-facebook   "></span> </a>
-							<div class="widget mkdf-vertical-separator-widget mkdf-vertical-separator-full-height"><span class="mkdf-vsw-height-holder"></span><span class="mkdf-vsw" style="vertical-align:middle;height:100%;border-left-style:solid;border-color:#ffffff;margin-left:30px"></span>
-							</div>
-							<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#6c5835" style="color: #ffffff;;font-size: 18px;margin: 0px 0px 0px 30px;" href="{{\App\Models\Setting::first()->twitter}}" target="_blank">
-								<span class="mkdf-social-icon-widget   ion-social-instagram   "></span> </a>
-							<div class="widget mkdf-vertical-separator-widget mkdf-vertical-separator-full-height"><span class="mkdf-vsw-height-holder"></span><span class="mkdf-vsw" style="vertical-align:middle;height:100%;border-left-style:solid;margin-left:30px"></span>
-							</div>
-							<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#6c5835" style="color: #ffffff;;font-size: 18px;margin: 0px 0px 0px 30px;" href="{{\App\Models\Setting::first()->linkdin}}" target="_blank">
-								<span class="mkdf-social-icon-widget   ion-social-linkedin   "></span> </a>
-							<div class="widget mkdf-vertical-separator-widget mkdf-vertical-separator-full-height"><span class="mkdf-vsw-height-holder"></span><span class="mkdf-vsw" style="vertical-align:middle;height:100%;border-left-style:solid;margin-left:30px"></span>
-							</div>
-							<a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#6c5835" style="color: #ffffff;;font-size: 18px;margin: 0px 0px 0px 30px;" href="{{\App\Models\Setting::first()->trustpilot}}" target="_blank">
-								<span class="mkdf-social-icon-widget   ion-social-pinterest   "></span> </a>
+       <div class="widget mkdf-vertical-separator-widget mkdf-vertical-separator-full-height"><span class="mkdf-vsw-height-holder"></span><span class="mkdf-vsw" style="vertical-align:middle;height:100%;border-left-style:solid;margin-left:30px"></span>
+       </div>
+       <a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#6c5835" style="color: #ffffff;;font-size: 18px;margin: 0px 0px 0px 30px;" href="{{ \App\Models\Setting::first()->facebook }}" target="_blank">
+        <span class="mkdf-social-icon-widget   ion-social-facebook   "></span> </a>
+       <div class="widget mkdf-vertical-separator-widget mkdf-vertical-separator-full-height"><span class="mkdf-vsw-height-holder"></span><span class="mkdf-vsw" style="vertical-align:middle;height:100%;border-left-style:solid;border-color:#ffffff;margin-left:30px"></span>
+       </div>
+       <a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#6c5835" style="color: #ffffff;;font-size: 18px;margin: 0px 0px 0px 30px;" href="{{ \App\Models\Setting::first()->twitter }}" target="_blank">
+        <span class="mkdf-social-icon-widget   ion-social-instagram   "></span> </a>
+       <div class="widget mkdf-vertical-separator-widget mkdf-vertical-separator-full-height"><span class="mkdf-vsw-height-holder"></span><span class="mkdf-vsw" style="vertical-align:middle;height:100%;border-left-style:solid;margin-left:30px"></span>
+       </div>
+       <a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#6c5835" style="color: #ffffff;;font-size: 18px;margin: 0px 0px 0px 30px;" href="{{ \App\Models\Setting::first()->linkdin }}" target="_blank">
+        <span class="mkdf-social-icon-widget   ion-social-linkedin   "></span> </a>
+       <div class="widget mkdf-vertical-separator-widget mkdf-vertical-separator-full-height"><span class="mkdf-vsw-height-holder"></span><span class="mkdf-vsw" style="vertical-align:middle;height:100%;border-left-style:solid;margin-left:30px"></span>
+       </div>
+       <a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#6c5835" style="color: #ffffff;;font-size: 18px;margin: 0px 0px 0px 30px;" href="{{ \App\Models\Setting::first()->trustpilot }}" target="_blank">
+        <span class="mkdf-social-icon-widget   ion-social-pinterest   "></span> </a>
 
-						</div>
+      </div>
 
-					</div>
+     </div>
 
-				</div>
+    </div>
 
-			</div> -->
+   </div> -->
 
-			<?php echo view('website/layout/nav'); ?>
+            <?php echo view('website/layout/nav'); ?>
 
-			<?php echo view('website/layout/nav-mobile'); ?>
+            <?php echo view('website/layout/nav-mobile'); ?>
 
-			<a id='mkdf-back-to-top' href='#'>
+            <a id='mkdf-back-to-top' href='#'>
 
-				<span class="mkdf-icon-stack">
+                <span class="mkdf-icon-stack">
 
-					<span aria-hidden="true" class="mkdf-icon-linear-icons lnr lnr-chevron-up "></span> <span aria-hidden="true" class="mkdf-icon-linear-icons lnr lnr-chevron-up "></span> </span>
+                    <span aria-hidden="true" class="mkdf-icon-linear-icons lnr lnr-chevron-up "></span> <span
+                        aria-hidden="true" class="mkdf-icon-linear-icons lnr lnr-chevron-up "></span> </span>
 
-			</a>
+            </a>
 
-			<div class="mkdf-content">
+            <div class="mkdf-content">
 
-				<div class="mkdf-content-inner">
+                <div class="mkdf-content-inner">
 
-					<div class="mkdf-title-holder mkdf-centered-type mkdf-title-va-header-bottom mkdf-title-content-va-middle mkdf-preload-background mkdf-has-bg-image mkdf-bg-parallax" style="height: 350px;background-color: rgba(194,170,128,0.08);background-image:url(public/website/assets/wp-content/uploads/2018/03/blog-title-img.jpg);" data-height="350">
+                    <div class="mkdf-title-holder mkdf-centered-type mkdf-title-va-header-bottom mkdf-title-content-va-middle mkdf-preload-background mkdf-has-bg-image mkdf-bg-parallax"
+                        style="height: 350px;background-color: rgba(194,170,128,0.08);background-image:url(public/website/assets/wp-content/uploads/2018/03/blog-title-img.jpg);"
+                        data-height="350">
 
-						<div class="mkdf-title-image">
+                        <div class="mkdf-title-image">
 
-							<img itemprop="image" src="<?php echo url('public/website/assets/wp-content/uploads/2018/03/blog-title-img.jpg') ?>" alt="i" />
+                            <img itemprop="image" src="<?php echo url('public/website/assets/wp-content/uploads/2018/03/blog-title-img.jpg'); ?>" alt="i" />
 
-						</div>
+                        </div>
 
-						<div class="mkdf-title-wrapper" style="height: 350px">
+                        <div class="mkdf-title-wrapper" style="height: 350px">
 
-							<div class="mkdf-title-inner">
+                            <div class="mkdf-title-inner">
 
-								<div class="mkdf-grid">
+                                <div class="mkdf-grid">
 
-									<h2 class="mkdf-page-title entry-title">News & Insights
-</h2>
+                                    <h2 class="mkdf-page-title entry-title">News & Insights
+                                    </h2>
 
-								</div>
+                                </div>
 
-							</div>
+                            </div>
 
-						</div>
+                        </div>
 
-					</div>
+                    </div>
 
-					<div class="mkdf-container">
+                    <div class="mkdf-container">
 
-						<div class="mkdf-container-inner clearfix">
+                        <div class="mkdf-container-inner clearfix">
 
-							<div class="mkdf-grid-row mkdf-content-has-sidebar mkdf-grid-large-gutter">
+                            <div class="mkdf-grid-row mkdf-content-has-sidebar mkdf-grid-large-gutter">
 
-								<div class="mkdf-page-content-holder mkdf-grid-col-9">
+                                <div class="mkdf-page-content-holder mkdf-grid-col-9">
 
-									<div class="mkdf-blog-holder mkdf-blog-single mkdf-blog-single-standard">
+                                    <div class="mkdf-blog-holder mkdf-blog-single mkdf-blog-single-standard">
 
-										<article id="post-1003" class="mkdf-post-has-media post-1003 post type-post status-publish format-standard has-post-thumbnail hentry category-business-trips tag-business tag-justice tag-violence">
+                                        <article id="post-1003"
+                                            class="mkdf-post-has-media post-1003 post type-post status-publish format-standard has-post-thumbnail hentry category-business-trips tag-business tag-justice tag-violence">
 
-											<div class="mkdf-post-content">
+                                            <div class="mkdf-post-content">
 
-												<div class="mkdf-post-heading">
+                                                <div class="mkdf-post-heading">
 
-													<div class="mkdf-post-image">
+                                                    <div class="mkdf-post-image">
 
-														<a itemprop="url" href="javascript:void(0)" title="What lawyers need">
+                                                        <a itemprop="url" href="javascript:void(0)"
+                                                            title="What lawyers need">
 
-															<img width="1300" height="720" src="{{asset('/public/images' . '/' .$post['image']) }}" class="attachment-full size-full wp-post-image" alt="i" loading="lazy" srcset="{{asset('/public/images' . '/' .$post['image']) }} 1300w, {{asset('/public/images' . '/' .$post['image']) }} 300w, {{asset('/public/images' . '/' .$post['image']) }} 768w, {{asset('/public/images' . '/' .$post['image']) }} 1024w, {{asset('/public/images' . '/' .$post['image']) }} 800w" sizes="(max-width: 1300px) 100vw, 1300px" /> </a>
+                                                            <img width="1300" height="720"
+                                                                src="{{ asset('/images' . '/' . $post['image']) }}"
+                                                                class="attachment-full size-full wp-post-image"
+                                                                alt="i" loading="lazy"
+                                                                srcset="{{ asset('/images' . '/' . $post['image']) }} 1300w, {{ asset('/images' . '/' . $post['image']) }} 300w, {{ asset('/images' . '/' . $post['image']) }} 768w, {{ asset('/images' . '/' . $post['image']) }} 1024w, {{ asset('/images' . '/' . $post['image']) }} 800w"
+                                                                sizes="(max-width: 1300px) 100vw, 1300px" /> </a>
 
-													</div>
+                                                    </div>
 
-												</div>
+                                                </div>
 
-												<div class="mkdf-post-text">
+                                                <div class="mkdf-post-text">
 
-													<div class="mkdf-post-text-inner">
+                                                    <div class="mkdf-post-text-inner">
 
-														<div class="mkdf-post-info-top">
+                                                        <div class="mkdf-post-info-top">
 
-															<!-- <div class="mkdf-post-info-author">
+                                                            <!-- <div class="mkdf-post-info-author">
 
-																	<a itemprop="author" class="mkdf-post-info-author-link" href="#">
+                 <a itemprop="author" class="mkdf-post-info-author-link" href="#">
 
-																		Date :
+                  Date :
 
-																	</a>
+                 </a>
 
-																</div>
+                </div>
 
-																<div itemprop="dateCreated" class="mkdf-post-info-date entry-date published updated">
+                <div itemprop="dateCreated" class="mkdf-post-info-date entry-date published updated">
 
-																	<a itemprop="url" href="#">
+                 <a itemprop="url" href="#">
 
-																	{{$post['created_at']}}
+                 {{ $post['created_at'] }}
 
-																	</a>
+                 </a>
 
-																	<meta itemprop="interactionCount" content="UserComments: 0" />
+                 <meta itemprop="interactionCount" content="UserComments: 0" />
 
-																</div> -->
+                </div> -->
 
-															<div class="mkdf-post-info-category">
+                                                            <div class="mkdf-post-info-category">
 
-																<a href="javascript:void(0)" rel="category tag">Category : {{$post['category']['title']}}</a>
+                                                                <a href="javascript:void(0)"
+                                                                    rel="category tag">Category :
+                                                                    {{ $post['category']['title'] }}</a>
 
-															</div>
+                                                            </div>
 
-														</div>
+                                                        </div>
 
-														<div class="mkdf-post-text-main">
+                                                        <div class="mkdf-post-text-main">
 
-															<h3 itemprop="name" class="entry-title mkdf-post-title">
+                                                            <h3 itemprop="name" class="entry-title mkdf-post-title">
 
-																<a itemprop="url" href="javascript:void(0)" title="What lawyers need">
+                                                                <a itemprop="url" href="javascript:void(0)"
+                                                                    title="What lawyers need">
 
-																	{{$post['title']}}
+                                                                    {{ $post['title'] }}
 
-																</a>
+                                                                </a>
 
-															</h3>
+                                                            </h3>
 
-															<div class="mkdf-post-excerpt-holder">
+                                                            <div class="mkdf-post-excerpt-holder">
 
-																<p itemprop="description" class="mkdf-post-excerpt">
+                                                                <p itemprop="description" class="mkdf-post-excerpt">
 
-																	{!!$post['description'] !!}
+                                                                    {!! $post['description'] !!}
 
-																</p>
+                                                                </p>
 
-															</div>
+                                                            </div>
 
-														</div>
+                                                        </div>
 
-													</div>
+                                                    </div>
 
-												</div>
+                                                </div>
 
-											</div>
+                                            </div>
 
-										</article>
+                                        </article>
 
-										<div class="mkdf-blog-single-navigation">
+                                        <div class="mkdf-blog-single-navigation">
 
-											<div class="mkdf-blog-single-navigation-inner clearfix">
+                                            <div class="mkdf-blog-single-navigation-inner clearfix">
 
-												<a itemprop="url" class="mkdf-blog-single-prev" href="../the-lawyers-club/index.html">
+                                                <a itemprop="url" class="mkdf-blog-single-prev"
+                                                    href="../the-lawyers-club/index.html">
 
-													<!-- <span class="mkdf-icon-linear-icons lnr lnr-chevron-left"></span> -->
+                                                    <!-- <span class="mkdf-icon-linear-icons lnr lnr-chevron-left"></span> -->
 
-													<!-- <span class="mkdf-blog-single-nav-label">previous</span> </a> -->
+                                                    <!-- <span class="mkdf-blog-single-nav-label">previous</span> </a> -->
 
-											</div>
+                                            </div>
 
-										</div>
+                                        </div>
 
-										<div class="mkdf-related-posts-holder clearfix">
+                                        <div class="mkdf-related-posts-holder clearfix">
 
-											<div class="mkdf-related-posts-holder-inner">
+                                            <div class="mkdf-related-posts-holder-inner">
 
-												<div class="mkdf-related-posts-title">
+                                                <div class="mkdf-related-posts-title">
 
-													<h4>Related Posts</h4>
+                                                    <h4>Related Posts</h4>
 
-												</div>
+                                                </div>
 
-												<div class="mkdf-related-posts-inner clearfix">
+                                                <div class="mkdf-related-posts-inner clearfix">
 
-													@if($recent_posts)
+                                                    @if ($recent_posts)
 
-													@foreach($recent_posts as $recent_post_val)
+                                                        @foreach ($recent_posts as $recent_post_val)
+                                                            <div class="mkdf-related-post">
 
+                                                                <div class="mkdf-related-post-inner">
 
+                                                                    <div class="mkdf-related-post-image">
 
-													<div class="mkdf-related-post">
+                                                                        <a itemprop="url"
+                                                                            href="{{ url('/blog_detail') . '/' . $recent_post_val->id }}"
+                                                                            title="The lawyers club">
 
-														<div class="mkdf-related-post-inner">
+                                                                            <img width="1300" height="720"
+                                                                                src="{{ asset('/images' . '/' . $recent_post_val['image']) }}"
+                                                                                class="attachment-full size-full wp-post-image"
+                                                                                alt="i" loading="lazy"
+                                                                                srcset="{{ asset('/images' . '/' . $recent_post_val['image']) }} 1300w, {{ asset('/images' . '/' . $recent_post_val['image']) }} 300w, {{ asset('/images' . '/' . $recent_post_val['image']) }} 768w, {{ asset('/images' . '/' . $recent_post_val['image']) }} 1024w, {{ asset('/images' . '/' . $recent_post_val['image']) }} 800w"
+                                                                                sizes="(max-width: 1300px) 100vw, 1300px" />
 
-															<div class="mkdf-related-post-image">
+                                                                        </a>
 
-																<a itemprop="url" href="{{url('/blog_detail').'/'.$recent_post_val->id}}" title="The lawyers club">
+                                                                    </div>
 
-																	<img width="1300" height="720" src="{{asset('/public/images' . '/' .$recent_post_val['image']) }}" class="attachment-full size-full wp-post-image" alt="i" loading="lazy" srcset="{{asset('/public/images' . '/' .$recent_post_val['image']) }} 1300w, {{asset('/public/images' . '/' .$recent_post_val['image']) }} 300w, {{asset('/public/images' . '/' .$recent_post_val['image']) }} 768w, {{asset('/public/images' . '/' .$recent_post_val['image']) }} 1024w, {{asset('/public/images' . '/' .$recent_post_val['image']) }} 800w" sizes="(max-width: 1300px) 100vw, 1300px" />
+                                                                    <h5 itemprop="name"
+                                                                        class="entry-title mkdf-post-title"><a
+                                                                            itemprop="url" href="javascript:void(0)"
+                                                                            title="The lawyers club">{{ $recent_post_val['title'] }}</a>
+                                                                    </h5>
 
-																</a>
+                                                                    <div class="mkdf-post-info">
 
-															</div>
+                                                                        <!-- <div itemprop="dateCreated" class="mkdf-post-info-date entry-date published updated">
 
-															<h5 itemprop="name" class="entry-title mkdf-post-title"><a itemprop="url" href="javascript:void(0)" title="The lawyers club">{{$recent_post_val['title']}}</a></h5>
+                 <a itemprop="url" href="../2018/03/index.html">
 
-															<div class="mkdf-post-info">
+                  March 9, 2018 </a>
 
-																<!-- <div itemprop="dateCreated" class="mkdf-post-info-date entry-date published updated">
+                 <meta itemprop="interactionCount" content="UserComments: 3" />
 
-																	<a itemprop="url" href="../2018/03/index.html">
+                </div> -->
 
-																		March 9, 2018 </a>
+                                                                        <!-- <div class="mkdf-post-info-author">
 
-																	<meta itemprop="interactionCount" content="UserComments: 3" />
+                 <a itemprop="author" class="mkdf-post-info-author-link" href="javascript:void(0)">
 
-																</div> -->
+                 {{ $post['title'] }} </a>
 
-																<!-- <div class="mkdf-post-info-author">
+                </div> -->
 
-																	<a itemprop="author" class="mkdf-post-info-author-link" href="javascript:void(0)">
+                                                                    </div>
 
-																	{{$post['title']}} </a>
+                                                                </div>
 
-																</div> -->
+                                                            </div>
+                                                        @endforeach
 
-															</div>
+                                                    @endif
 
-														</div>
 
-													</div>
 
 
 
-													@endforeach
+                                                </div>
 
-													@endif
+                                            </div>
 
+                                        </div>
 
+                                        <!-- <div class="mkdf-comment-holder clearfix" id="comments">
 
+           <div class="mkdf-comment-holder-inner">
 
+            <div class="mkdf-comments-title">
 
-												</div>
+             <h4>Comments</h4>
 
-											</div>
+            </div>
 
-										</div>
+            <div class="mkdf-comments">
 
-										<!-- <div class="mkdf-comment-holder clearfix" id="comments">
+             <ul class="mkdf-comment-list">
 
-											<div class="mkdf-comment-holder-inner">
+              <li>
 
-												<div class="mkdf-comments-title">
+               <div class="mkdf-comment clearfix">
 
-													<h4>Comments</h4>
+                <div class="mkdf-comment-image"> <img src='<?php echo asset('/website/assets/wp-content/uploads/2018/03/subscriber-img-1.png'); ?>' class='avatar pp-user-avatar avatar-96 photo ' height='96' width='96' /> </div>
 
-												</div>
+                <div class="mkdf-comment-text">
 
-												<div class="mkdf-comments">
+                 <div class="mkdf-comment-info">
 
-													<ul class="mkdf-comment-list">
+                  <h5 class="mkdf-comment-name vcard">
 
-														<li>
+                   Harold Duncan </h5>
 
-															<div class="mkdf-comment clearfix">
+                  <a rel='nofollow' class='comment-reply-link' href='javascrip:void(0)' data-commentid="2" data-postid="1003" data-belowelement="comment-2" data-respondelement="respond" data-replyto="Reply to Harold Duncan" aria-label='Reply to Harold Duncan'>reply</a>
 
-																<div class="mkdf-comment-image"> <img src='<?php echo asset('/public/website/assets/wp-content/uploads/2018/03/subscriber-img-1.png') ?>' class='avatar pp-user-avatar avatar-96 photo ' height='96' width='96' /> </div>
+                 </div>
 
-																<div class="mkdf-comment-text">
+                 <div class="mkdf-text-holder" id="comment-2">
 
-																	<div class="mkdf-comment-info">
+                  <p>
 
-																		<h5 class="mkdf-comment-name vcard">
+                   Lorem ipsum dolor sit amet, consectetuer
 
-																			Harold Duncan </h5>
+                   adipiscing elit. Aenean commodo ligula eget
 
-																		<a rel='nofollow' class='comment-reply-link' href='javascrip:void(0)' data-commentid="2" data-postid="1003" data-belowelement="comment-2" data-respondelement="respond" data-replyto="Reply to Harold Duncan" aria-label='Reply to Harold Duncan'>reply</a>
+                   dolor. Aenean massa. Cum sociis Theme
 
-																	</div>
+                   natoque penatibus et magnis dis parturient
 
-																	<div class="mkdf-text-holder" id="comment-2">
+                   montes, nascetur ridiculus mus.
 
-																		<p>
+                  </p>
 
-																			Lorem ipsum dolor sit amet, consectetuer
+                 </div>
 
-																			adipiscing elit. Aenean commodo ligula eget
+                 <div class="mkdf-comment-date">March 20, 2018</div>
 
-																			dolor. Aenean massa. Cum sociis Theme
+                </div>
 
-																			natoque penatibus et magnis dis parturient
+               </div>
 
-																			montes, nascetur ridiculus mus.
+              </li>
 
-																		</p>
+              <li>
 
-																	</div>
+               <div class="mkdf-comment clearfix">
 
-																	<div class="mkdf-comment-date">March 20, 2018</div>
+                <div class="mkdf-comment-image"> <img src='<?php echo asset('/website/assets/wp-content/uploads/2018/03/subscriber-img-2.png'); ?>' class='avatar pp-user-avatar avatar-96 photo ' height='96' width='96' /> </div>
 
-																</div>
+                <div class="mkdf-comment-text">
 
-															</div>
+                 <div class="mkdf-comment-info">
 
-														</li>
+                  <h5 class="mkdf-comment-name vcard">
 
-														<li>
+                   Kathryn Mason </h5>
 
-															<div class="mkdf-comment clearfix">
+                  <a rel='nofollow' class='comment-reply-link' href='index3094.html?replytocom=3#respond' data-commentid="3" data-postid="1003" data-belowelement="comment-3" data-respondelement="respond" data-replyto="Reply to Kathryn Mason" aria-label='Reply to Kathryn Mason'>reply</a>
 
-																<div class="mkdf-comment-image"> <img src='<?php echo asset('/public/website/assets/wp-content/uploads/2018/03/subscriber-img-2.png') ?>' class='avatar pp-user-avatar avatar-96 photo ' height='96' width='96' /> </div>
+                 </div>
 
-																<div class="mkdf-comment-text">
+                 <div class="mkdf-text-holder" id="comment-3">
 
-																	<div class="mkdf-comment-info">
+                  <p>
 
-																		<h5 class="mkdf-comment-name vcard">
+                   Aliquam lorem ante, dapibus in, viverra quis,
 
-																			Kathryn Mason </h5>
+                   feugiat a, tellus. Phasellus viverra nulla
 
-																		<a rel='nofollow' class='comment-reply-link' href='index3094.html?replytocom=3#respond' data-commentid="3" data-postid="1003" data-belowelement="comment-3" data-respondelement="respond" data-replyto="Reply to Kathryn Mason" aria-label='Reply to Kathryn Mason'>reply</a>
+                   ut metus varius laoreet. Quisque rutrum.
 
-																	</div>
+                   Aenean imperdiet. Etiam ultricies nisi vel
 
-																	<div class="mkdf-text-holder" id="comment-3">
+                   augue. Curabitur ullamcorper ultricies nisi.
 
-																		<p>
+                   Nam eget dui. Etiam rhoncus.
 
-																			Aliquam lorem ante, dapibus in, viverra quis,
+                  </p>
 
-																			feugiat a, tellus. Phasellus viverra nulla
+                 </div>
 
-																			ut metus varius laoreet. Quisque rutrum.
+                 <div class="mkdf-comment-date">March 20, 2018</div>
 
-																			Aenean imperdiet. Etiam ultricies nisi vel
+                </div>
 
-																			augue. Curabitur ullamcorper ultricies nisi.
+               </div>
 
-																			Nam eget dui. Etiam rhoncus.
+               <ul class="children">
 
-																		</p>
+                <li>
 
-																	</div>
+                 <div class="mkdf-comment clearfix">
 
-																	<div class="mkdf-comment-date">March 20, 2018</div>
+                  <div class="mkdf-comment-image"> <img src='<?php echo asset('/website/assets/wp-content/uploads/2018/03/subscriber-img-1.png'); ?>' class='avatar pp-user-avatar avatar-96 photo ' height='96' width='96' /> </div>
 
-																</div>
+                  <div class="mkdf-comment-text">
 
-															</div>
+                   <div class="mkdf-comment-info">
 
-															<ul class="children">
+                    <h5 class="mkdf-comment-name vcard"> Harold Duncan </h5>
 
-																<li>
+                    <a rel='nofollow' class='comment-reply-link' href='javascript:void(0)' data-commentid="4" data-postid="1003" data-belowelement="comment-4" data-respondelement="respond" data-replyto="Reply to Harold Duncan" aria-label='Reply to Harold Duncan'>reply</a>
 
-																	<div class="mkdf-comment clearfix">
+                   </div>
 
-																		<div class="mkdf-comment-image"> <img src='<?php echo asset('/public/website/assets/wp-content/uploads/2018/03/subscriber-img-1.png') ?>' class='avatar pp-user-avatar avatar-96 photo ' height='96' width='96' /> </div>
+                   <div class="mkdf-text-holder" id="comment-4">
 
-																		<div class="mkdf-comment-text">
+                    <p>
 
-																			<div class="mkdf-comment-info">
+                     Maecenas tempus, tellus eget
 
-																				<h5 class="mkdf-comment-name vcard"> Harold Duncan </h5>
+                     condimentum rhoncus, sem quam semper
 
-																				<a rel='nofollow' class='comment-reply-link' href='javascript:void(0)' data-commentid="4" data-postid="1003" data-belowelement="comment-4" data-respondelement="respond" data-replyto="Reply to Harold Duncan" aria-label='Reply to Harold Duncan'>reply</a>
+                     libero, sit amet adipiscing sem
 
-																			</div>
+                     neque sed ipsum.
 
-																			<div class="mkdf-text-holder" id="comment-4">
+                    </p>
 
-																				<p>
+                   </div>
 
-																					Maecenas tempus, tellus eget
+                   <div class="mkdf-comment-date">March 20,
 
-																					condimentum rhoncus, sem quam semper
+                    2018</div>
 
-																					libero, sit amet adipiscing sem
+                  </div>
 
-																					neque sed ipsum.
+                 </div>
 
-																				</p>
+                </li>
 
-																			</div>
+               </ul>
 
-																			<div class="mkdf-comment-date">March 20,
+              </li>
 
-																				2018</div>
+             </ul>
 
-																		</div>
+            </div>
 
-																	</div>
+           </div>
 
-																</li>
+          </div> -->
 
-															</ul>
+                                        <!-- <div class="mkdf-comment-form">
 
-														</li>
+           <div class="mkdf-comment-form-inner">
 
-													</ul>
+            <div id="respond" class="comment-respond">
 
-												</div>
+             <h4 id="reply-title" class="comment-reply-title">Post a Comment
 
-											</div>
+              <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">cancel
 
-										</div> -->
+                reply</a></small>
 
-										<!-- <div class="mkdf-comment-form">
+             </h4>
 
-											<div class="mkdf-comment-form-inner">
+             <form action="https://anwalt.qodeinteractive.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><textarea id="comment" placeholder="Your comment" name="comment" cols="45" rows="6"
+                 aria-required="true"></textarea><input id="author" name="author" placeholder="Your Name" type="text" value="" aria-required='true' />
 
-												<div id="respond" class="comment-respond">
+              <input id="email" name="email" placeholder="Your Email" type="text" value="" aria-required='true' />
 
-													<h4 id="reply-title" class="comment-reply-title">Post a Comment
+              <input id="url" name="url" placeholder="Website" type="text" value="" size="30" maxlength="200" />
 
-														<small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">cancel
+              <p class="comment-form-cookies-consent">
 
-																reply</a></small>
+               <input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" />
 
-													</h4>
+               <label for="wp-comment-cookies-consent">
 
-													<form action="https://anwalt.qodeinteractive.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><textarea id="comment" placeholder="Your comment" name="comment" cols="45" rows="6" aria-required="true"></textarea><input id="author" name="author" placeholder="Your Name" type="text" value="" aria-required='true' />
+                Save my name, email,
 
-														<input id="email" name="email" placeholder="Your Email" type="text" value="" aria-required='true' />
+                and website in this browser for the next time I
 
-														<input id="url" name="url" placeholder="Website" type="text" value="" size="30" maxlength="200" />
+                comment.
 
-														<p class="comment-form-cookies-consent">
+               </label>
 
-															<input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" />
+              </p>
 
-															<label for="wp-comment-cookies-consent">
+              <p class="form-submit"><input name="submit" type="submit" id="submit_comment" class="submit" value="Submit" />
 
-																Save my name, email,
+               <input type='hidden' name='comment_post_ID' value='1003' id='comment_post_ID' />
 
-																and website in this browser for the next time I
+               <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
 
-																comment.
+              </p>
 
-															</label>
+              <div class="wantispam-required-fields"><input type="hidden" name="wantispam_t" class="wantispam-control wantispam-control-t" value="1654679566" />
 
-														</p>
+               <div class="wantispam-group wantispam-group-q" style="clear: both;">
 
-														<p class="form-submit"><input name="submit" type="submit" id="submit_comment" class="submit" value="Submit" />
+                <label>Current <a href="javascript:void(0)" class="__cf_email__" data-cfemail="7009153002">[email&#160;protected]</a>
 
-															<input type='hidden' name='comment_post_ID' value='1003' id='comment_post_ID' />
+                 <span class="required">*</span></label>
 
-															<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+                <input type="hidden" name="wantispam_a" class="wantispam-control wantispam-control-a" value="2022" />
 
-														</p>
+                <input type="text" name="wantispam_q" class="wantispam-control wantispam-control-q" value="7.2.9" autocomplete="off" />
 
-														<div class="wantispam-required-fields"><input type="hidden" name="wantispam_t" class="wantispam-control wantispam-control-t" value="1654679566" />
+               </div>
 
-															<div class="wantispam-group wantispam-group-q" style="clear: both;">
+               <div class="wantispam-group wantispam-group-e" style="display: none;">
 
-																<label>Current <a href="javascript:void(0)" class="__cf_email__" data-cfemail="7009153002">[email&#160;protected]</a>
+                <label>Leave this field empty</label>
 
-																	<span class="required">*</span></label>
+                <input type="text" name="wantispam_e_email_url_website" class="wantispam-control wantispam-control-e" value="" autocomplete="off" />
 
-																<input type="hidden" name="wantispam_a" class="wantispam-control wantispam-control-a" value="2022" />
+               </div>
 
-																<input type="text" name="wantispam_q" class="wantispam-control wantispam-control-q" value="7.2.9" autocomplete="off" />
+              </div>
 
-															</div>
+             </form>
 
-															<div class="wantispam-group wantispam-group-e" style="display: none;">
+            </div>
 
-																<label>Leave this field empty</label>
+           </div>
 
-																<input type="text" name="wantispam_e_email_url_website" class="wantispam-control wantispam-control-e" value="" autocomplete="off" />
+          </div> -->
 
-															</div>
+                                    </div>
 
-														</div>
+                                </div>
 
-													</form>
+                                <div class="mkdf-sidebar-holder mkdf-grid-col-3">
 
-												</div>
+                                    <aside class="mkdf-sidebar">
 
-											</div>
+                                        <div id="search-2" class="widget widget_search">
 
-										</div> -->
+                                            <form role="search" method="get" class="searchform"
+                                                id="searchform-592" action="https://anwalt.qodeinteractive.com/">
 
-									</div>
+                                                <label class="screen-reader-text">Search for:</label>
 
-								</div>
+                                                <div class="input-holder clearfix">
 
-								<div class="mkdf-sidebar-holder mkdf-grid-col-3">
+                                                    <input type="search" class="search-field"
+                                                        placeholder="Type your search" value="" name="s"
+                                                        title="Search for:" />
 
-									<aside class="mkdf-sidebar">
+                                                    <button type="submit" class="mkdf-search-submit"><i
+                                                            class="mkdf-icon-ion-icon ion-ios-search "></i></button>
 
-										<div id="search-2" class="widget widget_search">
+                                                </div>
 
-											<form role="search" method="get" class="searchform" id="searchform-592" action="https://anwalt.qodeinteractive.com/">
+                                            </form>
 
-												<label class="screen-reader-text">Search for:</label>
+                                        </div>
 
-												<div class="input-holder clearfix">
+                                        <div class="widget mkdf-separator-widget">
 
-													<input type="search" class="search-field" placeholder="Type your search" value="" name="s" title="Search for:" />
+                                            <div class="mkdf-separator-holder clearfix  mkdf-separator-center mkdf-separator-normal"
+                                                style="margin-bottom: 15px">
 
-													<button type="submit" class="mkdf-search-submit"><i class="mkdf-icon-ion-icon ion-ios-search "></i></button>
+                                                <div class="mkdf-separator" style="border-style: solid"></div>
 
-												</div>
+                                            </div>
 
-											</form>
+                                        </div>
 
-										</div>
+                                        <div id="categories-2" class="widget widget_categories">
 
-										<div class="widget mkdf-separator-widget">
+                                            <div class="mkdf-widget-title-holder">
 
-											<div class="mkdf-separator-holder clearfix  mkdf-separator-center mkdf-separator-normal" style="margin-bottom: 15px">
+                                                <h5 class="mkdf-widget-title">Categories</h5>
 
-												<div class="mkdf-separator" style="border-style: solid"></div>
+                                            </div>
 
-											</div>
+                                            <ul>
 
-										</div>
+                                                @if ($catgeory)
 
-										<div id="categories-2" class="widget widget_categories">
+                                                    @foreach ($catgeory as $catgeory_key => $catgeory_val)
+                                                        <li class="cat-item cat-item-31"><a
+                                                                href="{{ url('catgeory_blog' . '/' . $catgeory_val->id) }}">{{ $catgeory_val->title }}</a>
 
-											<div class="mkdf-widget-title-holder">
+                                                            ({{ $catgeory_val->posts_count }})
+                                                        </li>
+                                                    @endforeach
 
-												<h5 class="mkdf-widget-title">Categories</h5>
+                                                @endif
 
-											</div>
+                                            </ul>
 
-											<ul>
+                                        </div>
 
-												@if($catgeory)
+                                        <div class="widget mkdf-separator-widget">
 
-												@foreach($catgeory as $catgeory_key => $catgeory_val)
+                                            <div class="mkdf-separator-holder clearfix  mkdf-separator-center mkdf-separator-normal"
+                                                style="margin-bottom: 9px">
 
-												<li class="cat-item cat-item-31"><a href="{{url('catgeory_blog' . '/' . $catgeory_val->id)}}">{{$catgeory_val->title}}</a>
+                                                <div class="mkdf-separator" style="border-style: solid"></div>
 
-													({{$catgeory_val->posts_count}})
+                                            </div>
 
-												</li>
+                                        </div>
 
-												@endforeach
+                                        <div class="widget mkdf-recent-post-widget">
 
-												@endif
+                                            <div class="mkdf-widget-title-holder">
 
-											</ul>
+                                                <h5 class="mkdf-widget-title">Latest Posts</h5>
 
-										</div>
+                                            </div>
 
-										<div class="widget mkdf-separator-widget">
+                                            <ul class="mkdf-recent-posts">
 
-											<div class="mkdf-separator-holder clearfix  mkdf-separator-center mkdf-separator-normal" style="margin-bottom: 9px">
+                                                @if ($latest_post)
 
-												<div class="mkdf-separator" style="border-style: solid"></div>
+                                                    @foreach ($latest_post as $latest_post_val)
+                                                        <!-- Recent Posts -->
 
-											</div>
+                                                        <li class="mkdf-rp-item"
+                                                            href="{{ url('blog_detail' . '/' . $latest_post_val['id']) }}">
+                                                            <a
+                                                                href="{{ url('blog_detail' . '/' . $latest_post_val['id']) }}">
 
-										</div>
+                                                                <div class="mkdf-rp-image"><img width="150"
+                                                                        height="110"
+                                                                        src="{{ asset('/images' . '/' . $latest_post_val->image) }}"
+                                                                        class="attachment-thumbnail size-thumbnail wp-post-image"
+                                                                        alt="i" loading="lazy" /></div>
 
-										<div class="widget mkdf-recent-post-widget">
+                                                                <div class="mkdf-recent-posts-info">
 
-											<div class="mkdf-widget-title-holder">
+                                                                    <p class="mkdf-rp-title">
+                                                                        {{ $latest_post_val->title }}</p><span
+                                                                        class="mkdf-rp-date">{{ $latest_post_val->created_at }}</span>
 
-												<h5 class="mkdf-widget-title">Latest Posts</h5>
+                                                                </div>
 
-											</div>
+                                                            </a>
 
-											<ul class="mkdf-recent-posts">
+                                                        </li>
 
-												@if($latest_post)
+                                                        <!-- Recent Posts -->
+                                                    @endforeach
 
-												@foreach($latest_post as $latest_post_val)
+                                                @endif
 
-												<!-- Recent Posts -->
+                                            </ul>
 
-												<li class="mkdf-rp-item" href="{{url('blog_detail' . '/' . $latest_post_val['id'])}}"><a href="{{url('blog_detail' . '/' . $latest_post_val['id'])}}">
+                                        </div>
 
-														<div class="mkdf-rp-image"><img width="150" height="110" src="{{asset('/public/images' . '/' .$latest_post_val->image) }}" class="attachment-thumbnail size-thumbnail wp-post-image" alt="i" loading="lazy" /></div>
+                                        <div class="widget mkdf-separator-widget">
 
-														<div class="mkdf-recent-posts-info">
+                                            <div class="mkdf-separator-holder clearfix  mkdf-separator-center mkdf-separator-normal"
+                                                style="margin-bottom: 29px">
 
-															<p class="mkdf-rp-title">{{$latest_post_val->title}}</p><span class="mkdf-rp-date">{{$latest_post_val->created_at}}</span>
+                                                <div class="mkdf-separator" style="border-style: solid"></div>
 
-														</div>
+                                            </div>
 
-													</a>
+                                        </div>
 
-												</li>
+                                        <!-- <div id="media_image-2" class="widget widget_media_image"><a href="#"><img width="300" height="194" src="assets/wp-content/uploads/2018/03/blog-sidebar-img-1-300x194.jpg" class="image wp-image-960  attachment-medium size-medium" alt="i" loading="lazy" style="max-width: 100%; height: auto;" srcset="https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/blog-sidebar-img-1-300x194.jpg 300w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/blog-sidebar-img-1-768x497.jpg 768w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/blog-sidebar-img-1.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a></div> -->
 
-												<!-- Recent Posts -->
+                                        <div class="widget mkdf-separator-widget">
 
-												@endforeach
+                                            <div class="mkdf-separator-holder clearfix  mkdf-separator-center mkdf-separator-normal"
+                                                style="margin-bottom: 22px">
 
-												@endif
+                                                <div class="mkdf-separator" style="border-style: solid"></div>
 
-											</ul>
+                                            </div>
 
-										</div>
+                                        </div>
 
-										<div class="widget mkdf-separator-widget">
+                                        <!-- <div id="media_image-3" class="widget widget_media_image"><a href="#"><img width="300" height="194" src="assets/wp-content/uploads/2018/03/blog-sidebar-img-2-300x194.jpg" class="image wp-image-961  attachment-medium size-medium" alt="i" loading="lazy" style="max-width: 100%; height: auto;" srcset="https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/blog-sidebar-img-2-300x194.jpg 300w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/blog-sidebar-img-2-768x497.jpg 768w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/blog-sidebar-img-2.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a></div> -->
 
-											<div class="mkdf-separator-holder clearfix  mkdf-separator-center mkdf-separator-normal" style="margin-bottom: 29px">
+                                        <div class="widget mkdf-separator-widget">
 
-												<div class="mkdf-separator" style="border-style: solid"></div>
+                                            <div class="mkdf-separator-holder clearfix  mkdf-separator-center mkdf-separator-normal"
+                                                style="margin-bottom: 9px">
 
-											</div>
+                                                <div class="mkdf-separator" style="border-style: solid"></div>
 
-										</div>
+                                            </div>
 
-										<!-- <div id="media_image-2" class="widget widget_media_image"><a href="#"><img width="300" height="194" src="assets/wp-content/uploads/2018/03/blog-sidebar-img-1-300x194.jpg" class="image wp-image-960  attachment-medium size-medium" alt="i" loading="lazy" style="max-width: 100%; height: auto;" srcset="https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/blog-sidebar-img-1-300x194.jpg 300w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/blog-sidebar-img-1-768x497.jpg 768w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/blog-sidebar-img-1.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a></div> -->
+                                        </div>
 
-										<div class="widget mkdf-separator-widget">
+                                        <!-- <div id="tag_cloud-2" class="widget widget_tag_cloud">
 
-											<div class="mkdf-separator-holder clearfix  mkdf-separator-center mkdf-separator-normal" style="margin-bottom: 22px">
+           <div class="mkdf-widget-title-holder">
 
-												<div class="mkdf-separator" style="border-style: solid"></div>
+            <h5 class="mkdf-widget-title">Tags</h5>
 
-											</div>
+           </div>
 
-										</div>
+           <div class="tagcloud"><a href="../tag/business/index.html" class="tag-cloud-link tag-link-23 tag-link-position-1" style="font-size: 22pt;" aria-label="Business (9 items)">Business</a>
 
-										<!-- <div id="media_image-3" class="widget widget_media_image"><a href="#"><img width="300" height="194" src="assets/wp-content/uploads/2018/03/blog-sidebar-img-2-300x194.jpg" class="image wp-image-961  attachment-medium size-medium" alt="i" loading="lazy" style="max-width: 100%; height: auto;" srcset="https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/blog-sidebar-img-2-300x194.jpg 300w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/blog-sidebar-img-2-768x497.jpg 768w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/blog-sidebar-img-2.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></a></div> -->
+            <a href="../tag/criminal/index.html" class="tag-cloud-link tag-link-21 tag-link-position-2" style="font-size: 17.6pt;" aria-label="Criminal (5 items)">Criminal</a>
 
-										<div class="widget mkdf-separator-widget">
+            <a href="../tag/justice/index.html" class="tag-cloud-link tag-link-22 tag-link-position-3" style="font-size: 11.6pt;" aria-label="Justice (2 items)">Justice</a>
 
-											<div class="mkdf-separator-holder clearfix  mkdf-separator-center mkdf-separator-normal" style="margin-bottom: 9px">
+            <a href="../tag/law/index.html" class="tag-cloud-link tag-link-20 tag-link-position-4" style="font-size: 22pt;" aria-label="Law (9 items)">Law</a>
 
-												<div class="mkdf-separator" style="border-style: solid"></div>
+            <a href="../tag/marriage/index.html" class="tag-cloud-link tag-link-25 tag-link-position-5" style="font-size: 8pt;" aria-label="Marriage (1 item)">Marriage</a>
 
-											</div>
+            <a href="../tag/violence/index.html" class="tag-cloud-link tag-link-24 tag-link-position-6" style="font-size: 14pt;" aria-label="Violence (3 items)">Violence</a>
 
-										</div>
+           </div>
 
-										<!-- <div id="tag_cloud-2" class="widget widget_tag_cloud">
+          </div> -->
 
-											<div class="mkdf-widget-title-holder">
+                                    </aside>
 
-												<h5 class="mkdf-widget-title">Tags</h5>
+                                </div>
 
-											</div>
+                            </div>
 
-											<div class="tagcloud"><a href="../tag/business/index.html" class="tag-cloud-link tag-link-23 tag-link-position-1" style="font-size: 22pt;" aria-label="Business (9 items)">Business</a>
+                        </div>
 
-												<a href="../tag/criminal/index.html" class="tag-cloud-link tag-link-21 tag-link-position-2" style="font-size: 17.6pt;" aria-label="Criminal (5 items)">Criminal</a>
+                    </div>
 
-												<a href="../tag/justice/index.html" class="tag-cloud-link tag-link-22 tag-link-position-3" style="font-size: 11.6pt;" aria-label="Justice (2 items)">Justice</a>
+                </div>
 
-												<a href="../tag/law/index.html" class="tag-cloud-link tag-link-20 tag-link-position-4" style="font-size: 22pt;" aria-label="Law (9 items)">Law</a>
+            </div>
 
-												<a href="../tag/marriage/index.html" class="tag-cloud-link tag-link-25 tag-link-position-5" style="font-size: 8pt;" aria-label="Marriage (1 item)">Marriage</a>
-
-												<a href="../tag/violence/index.html" class="tag-cloud-link tag-link-24 tag-link-position-6" style="font-size: 14pt;" aria-label="Violence (3 items)">Violence</a>
-
-											</div>
-
-										</div> -->
-
-									</aside>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<?php echo view('website/layout/footer'); ?>
+            <?php echo view('website/layout/footer'); ?>
 
 </body>
 

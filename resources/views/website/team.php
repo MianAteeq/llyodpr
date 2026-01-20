@@ -8,7 +8,7 @@
 	<!-- <div class="mkdf-smooth-transition-loader mkdf-mimic-ajax">
 		<div class="mkdf-st-loader">
 			<div class="mkdf-st-loader1">
-				<div class="mkdf-reveal-image"><img src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/04/preloader-img.png" alt="spinner" />
+				<div class="mkdf-reveal-image"><img src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/04/preloader-img.png" alt="spinner" />
 					<div class="mkdf-spinner-revealer"></div>
 				</div>
 			</div>
@@ -19,7 +19,7 @@
 			<a class="mkdf-close-side-menu mkdf-close-side-menu-icon-pack" href="#">
 				<span aria-hidden="true" class="mkdf-icon-linear-icons lnr lnr-cross "></span> </a>
 		</div>
-		<div id="media_image-5" class="widget mkdf-sidearea widget_media_image"><a href="#"><img width="150" height="25" src="https://llordpr.demo-fissionmonster.xyz/public/images/16565939661.png" class="image wp-image-1107  attachment-full size-full" alt="h" loading="lazy" style="max-width: 100%; height: auto;" /></a></div>
+		<div id="media_image-5" class="widget mkdf-sidearea widget_media_image"><a href="#"><img width="150" height="25" src="https://llordpr.demo-fissionmonster.xyz/images/16565939661.png" class="image wp-image-1107  attachment-full size-full" alt="h" loading="lazy" style="max-width: 100%; height: auto;" /></a></div>
 		<div class="widget mkdf-separator-widget">
 			<div class="mkdf-separator-holder clearfix  mkdf-separator-left mkdf-separator-normal" style="margin-top: -18px;margin-bottom: 26px">
 				<div class="mkdf-separator" style="border-color: #ffffff;border-style: solid;width: 145px;border-bottom-width: 2px"></div>
@@ -53,7 +53,7 @@
 			</div>
 			<div class="textwidget">
 				<p><a href="https://www.google.rs/maps/place/The+Nomad+Hotel/@40.7461394,-73.9883576,14.75z/data=!4m15!1m9!2m8!1z0KXQvtGC0LXQu9C4!3m6!1z0KXQvtGC0LXQu9C4!2z0IrRg9GY0L7RgNC6LCDQodGY0LXQtNC40ZrQtdC90LUg0JTRgNC20LDQstC1!3s0x89c24fa5d33f083b:0xc80b8f06e177fe62!4m2!1d-74.0059728!2d40.7127753!3m4!1s0x89c259a60a2beaf9:0xac8f81eb5975ef53!8m2!3d40.7449648!4d-73.9885479">
-				Halkin, Station Road, Watford WD17 1 ET</a><br />
+						Halkin, Station Road, Watford WD17 1 ET</a><br />
 					Phone: <a href="tel:00882020000001">{{\App\Models\Contact::first()->telephone}}</a></p>
 			</div>
 		</div>
@@ -135,7 +135,7 @@
 																		data-thumb="//anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-slider1-background-img-100x50.jpg"
 																		data-anim="ei:d;eo:d;s:d;r:0;t:fade;sl:d;"
 																		data-firstanim="t:fade;s:300;sl:7;">
-																		<img src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/03/h2-slider1-background-img.jpg"
+																		<img src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/03/h2-slider1-background-img.jpg"
 																			title="Law Office" data-parallax="8"
 																			data-panzoom="d:8000;ss:100;se:110;"
 																			class="rev-slidebg" data-no-retina>
@@ -149,7 +149,7 @@
 																			data-frame_1="tp:600;e:circ.out;st:500;sp:1200;sR:500;"
 																			data-frame_999="o:0;tp:600;e:nothing;st:w;sR:2300;"
 																			style="z-index:5;"><img
-																				src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/03/h2-slider1-img-1.png"
+																				src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/03/h2-slider1-img-1.png"
 																				width="216" height="51" data-no-retina>
 																		</rs-layer>
 																		<rs-layer id="slider-3-slide-3-layer-1"
@@ -213,7 +213,7 @@
 																	<rs-slide data-key="rs-7" data-title="Slide"
 																		data-thumb="//anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-slider2-background-img-100x50.jpg"
 																		data-anim="ei:d;eo:d;s:d;r:0;t:fade;sl:d;">
-																		<img src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/03/h2-slider2-background-img.jpg"
+																		<img src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/03/h2-slider2-background-img.jpg"
 																			title="Law Office" data-bg="p:right top;"
 																			data-parallax="8"
 																			data-panzoom="d:8000;ss:100;se:110;"
@@ -228,7 +228,7 @@
 																			data-frame_1="tp:600;e:circ.out;st:500;sp:1200;sR:500;"
 																			data-frame_999="o:0;tp:600;e:nothing;st:w;sR:2300;"
 																			style="z-index:5;"><img
-																				src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/03/h2-slider1-img-1.png"
+																				src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/03/h2-slider1-img-1.png"
 																				width="216" height="51" data-no-retina>
 																		</rs-layer>
 																		<rs-layer id="slider-3-slide-7-layer-2"
@@ -292,7 +292,7 @@
 																	<rs-slide data-key="rs-8" data-title="Slide"
 																		data-thumb="//anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-slider3-background-img-100x50.jpg"
 																		data-anim="ei:d;eo:d;s:d;r:0;t:fade;sl:d;">
-																		<img src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/03/h2-slider3-background-img.jpg"
+																		<img src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/03/h2-slider3-background-img.jpg"
 																			title="Law Office" data-bg="p:left bottom;"
 																			data-parallax="8"
 																			data-panzoom="d:9000;ss:100;se:110;"
@@ -307,7 +307,7 @@
 																			data-frame_1="tp:600;e:circ.out;st:500;sp:1200;sR:500;"
 																			data-frame_999="o:0;tp:600;e:nothing;st:w;sR:2300;"
 																			style="z-index:5;"><img
-																				src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/03/h2-slider1-img-1.png"
+																				src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/03/h2-slider1-img-1.png"
 																				width="216" height="51" data-no-retina>
 																		</rs-layer>
 																		<rs-layer id="slider-3-slide-8-layer-2"
@@ -467,7 +467,7 @@
 
 									<div class="mkdf-title-holder mkdf-centered-type mkdf-title-va-header-bottom mkdf-title-content-va-middle mkdf-preload-background mkdf-has-bg-image mkdf-bg-parallax" style="height: 430px;background-color: rgba(194,170,128,0.08);background-image:url(assets/wp-content/uploads/2018/03/p-title-background-1.jpg);" data-height="430">
 										<div class="mkdf-title-image">
-											<img itemprop="image" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/03/p-title-background-1.jpg" alt="k" />
+											<img itemprop="image" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/03/p-title-background-1.jpg" alt="k" />
 										</div>
 										<div class="mkdf-title-wrapper" style="height: 430px">
 											<div class="mkdf-title-inner">
@@ -487,7 +487,7 @@
 															<div class="mkdf-section-title-holder  " style="text-align: center">
 																<div class="mkdf-st-inner">
 																	<h3 class="mkdf-st-title">
-																	Our Team </h3>
+																		Our Team </h3>
 																	<div class="mkdf-separator-holder clearfix  mkdf-separator-center mkdf-separator-normal">
 																		<div class="mkdf-separator" style="width: 143px;border-bottom-width: 2px">
 																		</div>
@@ -512,7 +512,7 @@
 															<div class="mkdf-team-holder mkdf-team-info-below-image">
 																<div class="mkdf-team-inner">
 																	<div class="mkdf-team-image">
-																		<img width="800" height="578" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/03/h2-team-1.jpg" class="attachment-full size-full" alt="i" loading="lazy" srcset="https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-1.jpg 800w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-1-300x217.jpg 300w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-1-768x555.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" />
+																		<img width="800" height="578" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/03/h2-team-1.jpg" class="attachment-full size-full" alt="i" loading="lazy" srcset="https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-1.jpg 800w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-1-300x217.jpg 300w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-1-768x555.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" />
 																	</div>
 																	<div class="mkdf-team-info">
 																		<h5 class="mkdf-team-name">Rebecca Stevens</h5>
@@ -564,7 +564,7 @@
 															<div class="mkdf-team-holder mkdf-team-info-below-image">
 																<div class="mkdf-team-inner">
 																	<div class="mkdf-team-image">
-																		<img width="800" height="578" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/03/h2-team-2.jpg" class="attachment-full size-full" alt="i" loading="lazy" srcset="https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-2.jpg 800w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-2-300x217.jpg 300w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-2-768x555.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" />
+																		<img width="800" height="578" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/03/h2-team-2.jpg" class="attachment-full size-full" alt="i" loading="lazy" srcset="https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-2.jpg 800w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-2-300x217.jpg 300w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-2-768x555.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" />
 																	</div>
 																	<div class="mkdf-team-info">
 																		<h5 class="mkdf-team-name">Matthew Bates</h5>
@@ -617,7 +617,7 @@
 															<div class="mkdf-team-holder mkdf-team-info-below-image">
 																<div class="mkdf-team-inner">
 																	<div class="mkdf-team-image">
-																		<img width="800" height="578" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/03/h2-team-3.jpg" class="attachment-full size-full" alt="i" loading="lazy" srcset="https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-3.jpg 800w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-3-300x217.jpg 300w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-3-768x555.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" />
+																		<img width="800" height="578" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/03/h2-team-3.jpg" class="attachment-full size-full" alt="i" loading="lazy" srcset="https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-3.jpg 800w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-3-300x217.jpg 300w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-3-768x555.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" />
 																	</div>
 																	<div class="mkdf-team-info">
 																		<h5 class="mkdf-team-name">Gloria Edwards</h5>
@@ -670,7 +670,7 @@
 															<div class="mkdf-team-holder mkdf-team-info-below-image">
 																<div class="mkdf-team-inner">
 																	<div class="mkdf-team-image">
-																		<img width="800" height="578" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/03/h2-team-4.jpg" class="attachment-full size-full" alt="i" loading="lazy" srcset="https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-4.jpg 800w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-4-300x217.jpg 300w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-4-768x555.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" />
+																		<img width="800" height="578" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/03/h2-team-4.jpg" class="attachment-full size-full" alt="i" loading="lazy" srcset="https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-4.jpg 800w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-4-300x217.jpg 300w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-team-4-768x555.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" />
 																	</div>
 																	<div class="mkdf-team-info">
 																		<h5 class="mkdf-team-name">Adam Phillips</h5>
@@ -747,7 +747,7 @@
 																		<div class="mkdf-eh-item-content mkdf-eh-custom-4196">
 																			<div class="mkdf-single-image-holder   ">
 																				<div class="mkdf-si-inner">
-																					<img width="1024" height="654" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/03/h2-img-1.jpg" class="attachment-full size-full" alt="t" loading="lazy" srcset="https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-img-1.jpg 1024w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-img-1-300x192.jpg 300w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-img-1-768x491.jpg 768w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-img-1-800x511.jpg 800w" sizes="(max-width: 1024px) 100vw, 1024px" />
+																					<img width="1024" height="654" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/03/h2-img-1.jpg" class="attachment-full size-full" alt="t" loading="lazy" srcset="https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-img-1.jpg 1024w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-img-1-300x192.jpg 300w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-img-1-768x491.jpg 768w, https://anwalt.qodeinteractive.com/wp-content/uploads/2018/03/h2-img-1-800x511.jpg 800w" sizes="(max-width: 1024px) 100vw, 1024px" />
 																				</div>
 																			</div>
 																		</div>
@@ -1053,32 +1053,32 @@
 																<div class="mkdf-cc-inner mkdf-owl-slider" data-number-of-items="5" data-enable-loop="yes" data-enable-autoplay="yes" data-slider-speed="5000" data-slider-speed-animation="600" data-enable-navigation="no" data-enable-pagination="no" data-number-of-rows="1">
 																	<div class="mkdf-cc-item">
 																		<a itemprop="url" class="mkdf-cc-link mkdf-block-drag-link" href="#" target="_self">
-																			<img itemprop="image" class="mkdf-cc-image" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-1.png" alt="i" />
-																			<img itemprop="image" class="mkdf-cc-hover-image" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-1.png" alt="i" />
+																			<img itemprop="image" class="mkdf-cc-image" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-1.png" alt="i" />
+																			<img itemprop="image" class="mkdf-cc-hover-image" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-1.png" alt="i" />
 																		</a>
 																	</div>
 																	<div class="mkdf-cc-item">
 																		<a itemprop="url" class="mkdf-cc-link mkdf-block-drag-link" href="#" target="_self">
-																			<img itemprop="image" class="mkdf-cc-image" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-2.png" alt="i" />
-																			<img itemprop="image" class="mkdf-cc-hover-image" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-2.png" alt="i" />
+																			<img itemprop="image" class="mkdf-cc-image" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-2.png" alt="i" />
+																			<img itemprop="image" class="mkdf-cc-hover-image" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-2.png" alt="i" />
 																		</a>
 																	</div>
 																	<div class="mkdf-cc-item">
 																		<a itemprop="url" class="mkdf-cc-link mkdf-block-drag-link" href="#" target="_self">
-																			<img itemprop="image" class="mkdf-cc-image" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-3.png" alt="i" />
-																			<img itemprop="image" class="mkdf-cc-hover-image" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-3.png" alt="i" />
+																			<img itemprop="image" class="mkdf-cc-image" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-3.png" alt="i" />
+																			<img itemprop="image" class="mkdf-cc-hover-image" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-3.png" alt="i" />
 																		</a>
 																	</div>
 																	<div class="mkdf-cc-item">
 																		<a itemprop="url" class="mkdf-cc-link mkdf-block-drag-link" href="#" target="_self">
-																			<img itemprop="image" class="mkdf-cc-image" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-4.png" alt="i" />
-																			<img itemprop="image" class="mkdf-cc-hover-image" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-4.png" alt="i" />
+																			<img itemprop="image" class="mkdf-cc-image" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-4.png" alt="i" />
+																			<img itemprop="image" class="mkdf-cc-hover-image" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-4.png" alt="i" />
 																		</a>
 																	</div>
 																	<div class="mkdf-cc-item">
 																		<a itemprop="url" class="mkdf-cc-link mkdf-block-drag-link" href="#" target="_self">
-																			<img itemprop="image" class="mkdf-cc-image" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-5.png" alt="i" />
-																			<img itemprop="image" class="mkdf-cc-hover-image" src="<?php echo asset('/public/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-5.png" alt="i" />
+																			<img itemprop="image" class="mkdf-cc-image" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-5.png" alt="i" />
+																			<img itemprop="image" class="mkdf-cc-hover-image" src="<?php echo asset('/website') ?>/assets/wp-content/uploads/2018/04/h2-client-img-5.png" alt="i" />
 																		</a>
 																	</div>
 																</div>
